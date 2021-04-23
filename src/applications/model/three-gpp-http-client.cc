@@ -47,6 +47,7 @@ NS_OBJECT_ENSURE_REGISTERED (ThreeGppHttpClient);
 ThreeGppHttpClient::ThreeGppHttpClient ()
   : m_state (NOT_STARTED),
   m_socket (0),
+  m_txBuffer (Create<ThreeGppHttpServerTxBuffer> ()),
   m_objectBytesToBeReceived (0),
   m_objectClientTs (MilliSeconds (0)),
   m_objectServerTs (MilliSeconds (0)),
@@ -91,6 +92,10 @@ ThreeGppHttpClient::GetTypeId ()
                      "General trace for sending a packet of any kind.",
                      MakeTraceSourceAccessor (&ThreeGppHttpClient::m_txTrace),
                      "ns3::Packet::TracedCallback")
+    .AddTraceSource ("TxRequest",
+                     "Shoot an arrow for august mobicom. (request generated time)",
+                     MakeTraceSourceAccessor (&ThreeGppHttpClient::m_txReqTrace),
+                     "ns3::Time::TracedCallback")
     .AddTraceSource ("TxMainObjectRequest",
                      "Sent a request for a main object.",
                      MakeTraceSourceAccessor (&ThreeGppHttpClient::m_txMainObjectRequestTrace),
@@ -131,6 +136,7 @@ ThreeGppHttpClient::GetTypeId ()
                      "Trace fired upon every HTTP client state transition.",
                      MakeTraceSourceAccessor (&ThreeGppHttpClient::m_stateTransitionTrace),
                      "ns3::Application::StateTransitionCallback")
+                    
   ;
   return tid;
 }
@@ -214,6 +220,7 @@ ThreeGppHttpClient::StartApplication ()
     {
       m_httpVariables->Initialize ();
       OpenConnection ();
+      m_txBuffer->AddSocket (m_socket);
     }
   else
     {
@@ -227,6 +234,9 @@ void
 ThreeGppHttpClient::StopApplication ()
 {
   NS_LOG_FUNCTION (this);
+
+  // Close all accepted sockets.
+  m_txBuffer->CloseAllSockets ();
 
   SwitchToState (STOPPED);
   CancelAllPendingEvents ();
@@ -250,7 +260,7 @@ ThreeGppHttpClient::ConnectionSucceededCallback (Ptr<Socket> socket)
                                              this));
       NS_ASSERT (m_embeddedObjectsToBeRequested == 0);
       m_eventRequestMainObject = Simulator::ScheduleNow (
-          &ThreeGppHttpClient::RequestMainObject, this);
+          &ThreeGppHttpClient::ServeNewRequest, this, ThreeGppHttpHeader::MAIN_OBJECT);
     }
   else
     {
@@ -284,6 +294,28 @@ ThreeGppHttpClient::NormalCloseCallback (Ptr<Socket> socket)
 {
   NS_LOG_FUNCTION (this << socket);
 
+  if (m_txBuffer->IsSocketAvailable (socket))
+    {
+      // The application should now prepare to close the socket.
+      if (m_txBuffer->IsBufferEmpty (socket))
+        {
+          /*
+           * Here we declare that we have nothing more to send and the socket
+           * may be closed immediately.
+           */
+          socket->ShutdownSend ();
+          m_txBuffer->RemoveSocket (socket);
+        }
+      else
+        {
+          /*
+           * Remember to close the socket later, whenever the buffer becomes
+           * empty.
+           */
+          m_txBuffer->PrepareClose (socket);
+        }
+    }
+
   CancelAllPendingEvents ();
 
   if (socket->GetErrno () != Socket::ERROR_NOTERROR)
@@ -303,6 +335,11 @@ void
 ThreeGppHttpClient::ErrorCloseCallback (Ptr<Socket> socket)
 {
   NS_LOG_FUNCTION (this << socket);
+
+   if (m_txBuffer->IsSocketAvailable (socket))
+    {
+      m_txBuffer->CloseSocket (socket);
+    }
 
   CancelAllPendingEvents ();
   if (socket->GetErrno () != Socket::ERROR_NOTERROR)
@@ -377,9 +414,10 @@ ThreeGppHttpClient::OpenConnection ()
   if (m_state == NOT_STARTED || m_state == EXPECTING_EMBEDDED_OBJECT
       || m_state == PARSING_MAIN_OBJECT || m_state == READING)
     {
-      m_socket = Socket::CreateSocket (GetNode (),
-                                       TcpSocketFactory::GetTypeId ());
+      TypeId tid = TypeId::LookupByName ("ns3::TcpSocketFactory");
 
+      m_socket = Socket::CreateSocket (GetNode (), tid);
+                                       
       int ret;
 
       if (Ipv4Address::IsMatchingType (m_remoteServerAddress))
@@ -441,6 +479,33 @@ ThreeGppHttpClient::OpenConnection ()
 
 } // end of `void OpenConnection ()`
 
+void
+ThreeGppHttpClient::ServeNewRequest (ThreeGppHttpHeader::ContentType_t type)
+{
+  NS_LOG_FUNCTION (this);
+
+  //std::cout<<"Avail? "<<m_txBuffer->IsSocketAvailable (m_socket)<<std::endl;
+  const uint32_t requestSize = m_httpVariables->GetRequestSize ();
+  NS_LOG_INFO (this << " Request to be served is "
+                    << requestSize << " bytes.");
+  m_txBuffer->WriteNewObject (m_socket, type, requestSize);
+  const uint32_t actualSent = ServeFromTxBuffer ();
+
+  if (actualSent < requestSize)
+    {
+      NS_LOG_INFO (this << " Transmission of request is suspended"
+                        << " after " << actualSent << " bytes.");
+    }
+  else
+    {
+      NS_LOG_INFO (this << " Finished sending a whole request.");
+    }
+  if (type == ThreeGppHttpHeader::MAIN_OBJECT)
+    SwitchToState (EXPECTING_MAIN_OBJECT);
+  else if (type == ThreeGppHttpHeader::EMBEDDED_OBJECT)
+    SwitchToState (EXPECTING_EMBEDDED_OBJECT);
+}
+
 
 void
 ThreeGppHttpClient::RequestMainObject ()
@@ -449,17 +514,21 @@ ThreeGppHttpClient::RequestMainObject ()
 
   if (m_state == CONNECTING || m_state == READING)
     {
+      const uint32_t requestSize = m_httpVariables->GetRequestSize ();
+
       ThreeGppHttpHeader header;
-      header.SetContentLength (0); // Request does not need any content length.
+      header.SetContentLength (requestSize); // Notify server the request size 
       header.SetContentType (ThreeGppHttpHeader::MAIN_OBJECT);
       header.SetClientTs (Simulator::Now ());
 
-      const uint32_t requestSize = m_httpVariables->GetRequestSize ();
       Ptr<Packet> packet = Create<Packet> (requestSize);
       packet->AddHeader (header);
       const uint32_t packetSize = packet->GetSize ();
+
       m_txMainObjectRequestTrace (packet);
+      
       m_txTrace (packet);
+      //std::cout<<"Tx!"<<std::endl;
       const int actualBytes = m_socket->Send (packet);
       NS_LOG_DEBUG (this << " Send() packet " << packet
                          << " of " << packet->GetSize () << " bytes,"
@@ -494,16 +563,19 @@ ThreeGppHttpClient::RequestEmbeddedObject ()
     {
       if (m_embeddedObjectsToBeRequested > 0)
         {
+          const uint32_t requestSize = m_httpVariables->GetRequestSize ();
+
           ThreeGppHttpHeader header;
-          header.SetContentLength (0); // Request does not need any content length.
+          header.SetContentLength (requestSize); // Request does not need any content length.
           header.SetContentType (ThreeGppHttpHeader::EMBEDDED_OBJECT);
           header.SetClientTs (Simulator::Now ());
 
-          const uint32_t requestSize = m_httpVariables->GetRequestSize ();
           Ptr<Packet> packet = Create<Packet> (requestSize);
           packet->AddHeader (header);
           const uint32_t packetSize = packet->GetSize ();
+
           m_txEmbeddedObjectRequestTrace (packet);
+
           m_txTrace (packet);
           const int actualBytes = m_socket->Send (packet);
           NS_LOG_DEBUG (this << " Send() packet " << packet
@@ -535,6 +607,62 @@ ThreeGppHttpClient::RequestEmbeddedObject ()
 
 } // end of `void RequestEmbeddedObject ()`
 
+uint32_t
+ThreeGppHttpClient::ServeFromTxBuffer ()
+{
+  NS_LOG_FUNCTION (this << m_socket);
+
+  if (m_txBuffer->IsBufferEmpty (m_socket))
+  {
+    NS_LOG_LOGIC (this << " Tx buffer is empty. Not sending anything.");
+    return 0;
+  }
+  bool firstPartOfObject = !m_txBuffer->HasTxedPartOfObject (m_socket);
+
+  const uint32_t socketSize = m_socket->GetTxAvailable ();
+  NS_LOG_DEBUG (this << " Socket has "<< socketSize
+                     << " bytes available for Tx");
+
+  const uint32_t txBufferSize = m_txBuffer->GetBufferSize (m_socket);
+
+  uint32_t contentSize = std::min (txBufferSize, socketSize - 22);
+  Ptr<Packet> packet = Create<Packet> (contentSize);
+  uint32_t packetSize = contentSize;
+  if (packetSize == 0)
+  {
+    NS_LOG_LOGIC (this << " Socket size leads to packet size of zero; not sending anything.");
+    return 0;
+  }
+
+  m_txReqTrace(Simulator::Now());
+
+  if (firstPartOfObject)
+  {
+    ThreeGppHttpHeader httpHeader;
+    httpHeader.SetContentLength (txBufferSize);
+    httpHeader.SetContentType (m_txBuffer->GetBufferContentType (m_socket));
+
+    //httpHeader.SetClientTs (m_txBuffer->GetClientTs (m_socket));
+    httpHeader.SetClientTs (Simulator::Now());
+    packet->AddHeader (httpHeader);
+    packetSize += httpHeader.GetSerializedSize ();
+  }
+  
+  // Send
+  const int actualBytes = m_socket->Send (packet);
+  m_txTrace (packet);
+
+  if (actualBytes == static_cast<int> (packetSize))
+  {
+    m_txBuffer->DepleteBufferSize (m_socket, contentSize);
+
+    return packetSize;
+  }
+  else
+  {
+    return 0;
+  }
+}
 
 void
 ThreeGppHttpClient::ReceiveMainObject (Ptr<Packet> packet, const Address &from)
@@ -651,7 +779,7 @@ ThreeGppHttpClient::ReceiveEmbeddedObject (Ptr<Packet> packet, const Address &fr
                                 << " more embedded object(s) to be requested.");
               // Immediately request another using the existing connection.
               m_eventRequestEmbeddedObject = Simulator::ScheduleNow (
-                  &ThreeGppHttpClient::RequestEmbeddedObject, this);
+                  &ThreeGppHttpClient::ServeNewRequest, this, ThreeGppHttpHeader::EMBEDDED_OBJECT);
             }
           else
             {
@@ -731,6 +859,7 @@ ThreeGppHttpClient::Receive (Ptr<Packet> packet)
 } // end of `void Receive (packet)`
 
 
+
 void
 ThreeGppHttpClient::EnterParsingTime ()
 {
@@ -773,7 +902,7 @@ ThreeGppHttpClient::ParseMainObject ()
            * existing connection.
            */
           m_eventRequestEmbeddedObject = Simulator::ScheduleNow (
-              &ThreeGppHttpClient::RequestEmbeddedObject, this);
+              &ThreeGppHttpClient::ServeNewRequest, this, ThreeGppHttpHeader::EMBEDDED_OBJECT);
         }
       else
         {
@@ -807,8 +936,10 @@ ThreeGppHttpClient::EnterReadingTime ()
                         << readingTime.As (Time::S) << ".");
 
       // Schedule a request of another main object once the reading time expires.
+      //m_eventRequestMainObject = Simulator::Schedule (
+      //    readingTime, &ThreeGppHttpClient::RequestMainObject, this);
       m_eventRequestMainObject = Simulator::Schedule (
-          readingTime, &ThreeGppHttpClient::RequestMainObject, this);
+          readingTime, &ThreeGppHttpClient::ServeNewRequest, this, ThreeGppHttpHeader::MAIN_OBJECT);
       SwitchToState (READING);
     }
   else

@@ -103,13 +103,13 @@ LteRlcAm::GetTypeId (void)
                    MakeTimeChecker ())
     .AddAttribute ("StatusProhibitTimer",
                    "Value of the t-StatusProhibit timer (See section 7.3 of 3GPP TS 36.322)",
-                   TimeValue (MilliSeconds (10)),
+                   TimeValue (MilliSeconds (1)),
                    MakeTimeAccessor (&LteRlcAm::m_statusProhibitTimerValue),
                    MakeTimeChecker ())
     .AddAttribute ("ReportBufferStatusTimer",
                    "How much to wait to issue a new Report Buffer Status since the last time "
                    "a new SDU was received",     
-                   TimeValue (MilliSeconds (20)),
+                   TimeValue (MilliSeconds (1)),
                    MakeTimeAccessor (&LteRlcAm::m_rbsTimerValue),
                    MakeTimeChecker ())
     .AddAttribute ("TxOpportunityForRetxAlwaysBigEnough",

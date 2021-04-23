@@ -1698,7 +1698,7 @@ LteEnbRrc::GetTypeId (void)
                    MakeUintegerChecker<uint8_t> ())
     .AddAttribute ("EpsBearerToRlcMapping", 
                    "Specify which type of RLC will be used for each type of EPS bearer. ",
-                   EnumValue (RLC_SM_ALWAYS),
+                   EnumValue (RLC_UM_ALWAYS),
                    MakeEnumAccessor (&LteEnbRrc::m_epsBearerToRlcMapping),
                    MakeEnumChecker (RLC_SM_ALWAYS, "RlcSmAlways",
                                     RLC_UM_ALWAYS, "RlcUmAlways",

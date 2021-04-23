@@ -1,0 +1,64 @@
+Waf: Entering directory `/home/gslee2/2021-nr/ns-3-dev/build'
+[2044/2188] Compiling src/nr/helper/grid-scenario-helper.cc
+[2129/2188] Linking build/lib/libns3-dev-nr-debug.so
+[2130/2188] Linking build/src/nr/ns3-dev-nr-print-introspected-doxygen-debug
+[2131/2188] Linking build/scratch/cttc-error-model
+[2132/2188] Linking build/scratch/cttc-error-model-comparison
+[2133/2188] Linking build/scratch/scratch-simulator
+[2134/2188] Linking build/scratch/lena-simple-epc
+[2135/2188] Linking build/scratch/cttc-3gpp-channel-example
+[2136/2188] Linking build/scratch/cttc-lte-ca-demo
+[2137/2188] Linking build/scratch/cttc-nr-notching
+[2138/2188] Linking build/scratch/cttc-error-model-amc
+[2139/2188] Linking build/scratch/cttc-nr-demo
+[2140/2188] Linking build/scratch/cttc-nr-cc-bwp-demo
+[2141/2188] Linking build/scratch/mobicom21_preliminary
+[2142/2188] Linking build/scratch/second
+[2143/2188] Linking build/scratch/cttc-3gpp-channel-nums-fdm
+[2144/2188] Linking build/scratch/three-gpp-http-example
+[2145/2188] Linking build/scratch/subdir/subdir
+[2146/2188] Linking build/scratch/cttc-3gpp-channel-simple-ran
+[2147/2188] Linking build/utils/ns3-dev-test-runner-debug
+[2148/2188] Linking build/utils/ns3-dev-print-introspected-doxygen-debug
+Waf: Leaving directory `/home/gslee2/2021-nr/ns-3-dev/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (4.457s)
+UE position: 50:0:1.5
+UE position: 100:0:1.5
+0.4 INACTIVE -> TO_SEND, bufSize 60
+0.4 INACTIVE -> TO_SEND, bufSize 60
+0.402 UE: 2 Sending SR to PHY in slot FrameNum: 40 SubFrameNum: 2 SlotNum: 0
+0.402 UE: 1 Sending SR to PHY in slot FrameNum: 40 SubFrameNum: 2 SlotNum: 0
+0.405 Receive SR
+0.405 Receive SR
+0.410071 RNTI: 2 TBS: 172 queue: 60
+0.410071 PDU sent 62 172
+0.410071 RNTI: 1 TBS: 172 queue: 60
+0.410071 PDU sent 62 172
+0.412957 Received MAC
+0.412957 Received MAC
+0.413029 Received MAC
+0.413029 Received MAC
+0.415243 INACTIVE -> TO_SEND, bufSize 56
+0.416243 INACTIVE -> TO_SEND, bufSize 56
+0.422 UE: 1 Sending SR to PHY in slot FrameNum: 42 SubFrameNum: 2 SlotNum: 0
+0.422 UE: 2 Sending SR to PHY in slot FrameNum: 42 SubFrameNum: 2 SlotNum: 0
+0.425 Receive SR
+0.425 Receive SR
+0.430071 RNTI: 2 TBS: 1755 queue: 5638
+0.430071 PDU sent 1750 1755
+0.430071 RNTI: 1 TBS: 4080 queue: 5638
+0.430071 PDU sent 4075 4080
+0.432957 Received MAC
+0.432957 Received MAC
+0.433029 Received MAC
+0.433029 Received MAC
+0.440071 RNTI: 2 TBS: 5264 queue: 3892
+0.440071 PDU sent 3892 5264
+0.440071 RNTI: 1 TBS: 4080 queue: 1565
+0.440071 PDU sent 1567 4080
+0.442814 Received MAC
+0.442814 Received MAC
+assert failed. cond="m_ptr", msg="Attempted to dereference zero pointer", +0.442815838s 6 file=./ns3/ptr.h, line=630
+terminate called without an active exception
+Command ['/home/gslee2/2021-nr/ns-3-dev/build/scratch/mobicom21_preliminary'] terminated with signal SIGABRT. Run it under a debugger to get more information (./waf --run <program> --gdb").

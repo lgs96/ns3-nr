@@ -198,6 +198,7 @@ private:
    *
    * \param socket Pointer to the socket where the event originates from.
    */
+  void Receive (Ptr<Packet> packet);
   void ReceivedDataCallback (Ptr<Socket> socket);
   /**
    * Invoked when more buffer space for transmission is added to a socket. The
@@ -267,6 +268,14 @@ private:
   /// Pointer to the transmission buffer.
   Ptr<ThreeGppHttpServerTxBuffer>  m_txBuffer;
 
+  uint32_t     m_requestBytesToBeReceived;
+  /// The packet constructed of one or more parts with ThreeGppHttpHeader.
+  Ptr<Packet>  m_constructedPacket;
+  /// The client time stamp of the ThreeGppHttpHeader from the last received packet.
+  Time         m_requestClientTs;
+  /// The server time stamp of the ThreeGppHttpHeader from the last received packet.
+  Time         m_requestServerTs;
+
   // ATTRIBUTES
 
   /// The `Variables` attribute.
@@ -288,6 +297,8 @@ private:
   TracedCallback<uint32_t> m_embeddedObjectTrace;
   /// The `Tx` trace source.
   TracedCallback<Ptr<const Packet> > m_txTrace;
+  /// The `Tx` trace source.
+  TracedCallback<Time> m_rxReqTrace;
   /// The `Rx` trace source.
   TracedCallback<Ptr<const Packet>, const Address &> m_rxTrace;
   /// The `RxDelay` trace source.

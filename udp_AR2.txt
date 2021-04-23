@@ -1,0 +1,1 @@
+E2E latency	Uplink latency	Server latency	Downlink latency

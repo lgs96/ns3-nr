@@ -53,6 +53,9 @@ ThreeGppHttpServer::ThreeGppHttpServer ()
   : m_state (NOT_STARTED),
   m_initialSocket (0),
   m_txBuffer (Create<ThreeGppHttpServerTxBuffer> ()),
+  m_requestBytesToBeReceived (0),
+  m_requestClientTs (MilliSeconds (0)),
+  m_requestServerTs (MilliSeconds (0)),
   m_httpVariables (CreateObject<ThreeGppHttpVariables> ())
 {
   NS_LOG_FUNCTION (this);
@@ -113,6 +116,10 @@ ThreeGppHttpServer::GetTypeId ()
                      "A packet has been sent.",
                      MakeTraceSourceAccessor (&ThreeGppHttpServer::m_txTrace),
                      "ns3::Packet::TracedCallback")
+    .AddTraceSource ("RxRequest",
+                     "A packet has been sent.",
+                     MakeTraceSourceAccessor (&ThreeGppHttpServer::m_rxReqTrace),
+                     "ns3::Time::TracedCallback")
     .AddTraceSource ("Rx",
                      "A packet has been received.",
                      MakeTraceSourceAccessor (&ThreeGppHttpServer::m_rxTrace),
@@ -409,10 +416,58 @@ ThreeGppHttpServer::ErrorCloseCallback (Ptr<Socket> socket)
 
 
 void
+ThreeGppHttpServer::Receive (Ptr<Packet> packet)
+{
+  NS_LOG_FUNCTION(this << packet);
+  //std::cout<<"Remain: "<<m_requestBytesToBeReceived<<std::endl;
+  //std::cout<<"Packet size: "<< packet->GetSize ()<<std::endl;
+  bool firstPacket = false;
+  
+  if(m_requestBytesToBeReceived == 0)
+    {
+      //std::cout<<"First packet"<<std::endl;
+      firstPacket = true;
+
+      ThreeGppHttpHeader httpHeader;
+      packet->RemoveHeader (httpHeader);
+
+      m_requestBytesToBeReceived = httpHeader.GetContentLength ();
+      m_requestClientTs = httpHeader.GetClientTs ();
+      m_requestServerTs = httpHeader.GetServerTs ();
+
+      m_constructedPacket = packet->Copy ();
+      m_constructedPacket->AddHeader(httpHeader);
+    }
+  uint32_t requestSize = packet->GetSize();
+
+  if(m_requestBytesToBeReceived < requestSize)
+    {
+      NS_LOG_WARN (this << " The received packet"
+                    << " (" << requestSize << " bytes of content)"
+                    << " is larger than"
+                    << " the request that we expected to receive"
+                    << " (" << m_requestBytesToBeReceived << " bytes).");
+      // Stop expecting any more packet of this object.
+      m_requestBytesToBeReceived = 0;
+      m_constructedPacket = NULL;
+    }
+  else
+    {
+      m_requestBytesToBeReceived -= requestSize;
+      if (!firstPacket)
+      {
+        Ptr<Packet> packetCopy = packet->Copy ();
+        m_constructedPacket->AddAtEnd (packetCopy);
+      } 
+    }
+}
+
+//modified to deal with bigger size request than one packet size
+void
 ThreeGppHttpServer::ReceivedDataCallback (Ptr<Socket> socket)
 {
   NS_LOG_FUNCTION (this << socket);
-
+  
   Ptr<Packet> packet;
   Address from;
 
@@ -441,15 +496,30 @@ ThreeGppHttpServer::ReceivedDataCallback (Ptr<Socket> socket)
         }
 #endif /* NS3_LOG_ENABLE */
 
+      Receive (packet);
+      
+      if(m_requestBytesToBeReceived > 0)
+      {
+        NS_LOG_INFO (this << " " << m_requestBytesToBeReceived << " byte(s)"
+                            << " remains from this chunk of request.");
+        return;
+      }
+
+      //std::cout<<"Remain2: "<<m_requestBytesToBeReceived<<std::endl;
+
       // Check the header. No need to remove it, since it is not a "real" header.
       ThreeGppHttpHeader httpHeader;
-      packet->PeekHeader (httpHeader);
+      m_constructedPacket->PeekHeader (httpHeader);
 
       // Fire trace sources.
+      m_rxReqTrace(Simulator::Now());
       m_rxTrace (packet, from);
       m_rxDelayTrace (Simulator::Now () - httpHeader.GetClientTs (), from);
 
+      std::cout<<"E2E latency: "<<(Simulator::Now () - httpHeader.GetClientTs ()).GetSeconds()<<std::endl;
+
       Time processingDelay;
+      //std::cout<<"Type: "<< httpHeader.GetContentType ()<<std::endl;
       switch (httpHeader.GetContentType ())
         {
         case ThreeGppHttpHeader::MAIN_OBJECT:

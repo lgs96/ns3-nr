@@ -26,7 +26,7 @@
 #include <ns3/address.h>
 #include <ns3/traced-callback.h>
 #include <ns3/three-gpp-http-header.h>
-
+#include <ns3/three-gpp-http-server.h>
 
 namespace ns3 {
 
@@ -228,6 +228,8 @@ private:
 
   // TX-RELATED METHODS
 
+  void ServeNewRequest (ThreeGppHttpHeader::ContentType_t type);
+
   /**
    * Send a request object for a main object to the destination web server.
    * The size of the request packet is randomly determined by HttpVariables and
@@ -246,6 +248,8 @@ private:
    */
   void RequestEmbeddedObject ();
 
+  uint32_t ServeFromTxBuffer ();
+ 
   // RX-RELATED METHODS
 
   /**
@@ -350,6 +354,8 @@ private:
   State_t      m_state;
   /// The socket for sending and receiving packets to/from the web server.
   Ptr<Socket>  m_socket;
+  // TxBuffer
+  Ptr<ThreeGppHttpServerTxBuffer>  m_txBuffer;
   /// According to the content length specified by the ThreeGppHttpHeader.
   uint32_t     m_objectBytesToBeReceived;
   /// The packet constructed of one or more parts with ThreeGppHttpHeader.
@@ -378,6 +384,8 @@ private:
   ns3::TracedCallback<Ptr<const ThreeGppHttpClient> > m_connectionClosedTrace;
   /// The `Tx` trace source.
   ns3::TracedCallback<Ptr<const Packet> >   m_txTrace;
+  /// The `Tx` trace source.
+  ns3::TracedCallback<Time>   m_txReqTrace;
   /// The `TxMainObjectRequest` trace source.
   ns3::TracedCallback<Ptr<const Packet> >     m_txMainObjectRequestTrace;
   /// The `TxEmbeddedObjectRequest` trace source.

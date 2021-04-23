@@ -396,6 +396,8 @@ LteRlcUm::DoNotifyTxOpportunity (LteMacSapUser::TxOpportunityParameters txOpPara
 
   m_macSapProvider->TransmitPdu (params);
 
+  //std::cout<<Simulator::Now().GetSeconds()<<" Trasnmit PDU from RLC to MAC "<<packet->GetSize ()<<std::endl;
+
   if (! m_txBuffer.empty ())
     {
       m_rbsTimer.Cancel ();
@@ -423,6 +425,8 @@ LteRlcUm::DoReceivePdu (LteMacSapUser::ReceivePduParameters rxPduParams)
 
   delay = Simulator::Now() - rlcTag.GetSenderTimestamp ();
   m_rxPdu (m_rnti, m_lcid, rxPduParams.p->GetSize (), delay.GetNanoSeconds ());
+
+  //std::cout<<Simulator::Now().GetSeconds()<< " RLC rx "<<rxPduParams.p->GetSize ()<<" "<<delay.GetSeconds ()<< std::endl;
 
   // 5.1.2.2 Receive operations
 
@@ -1144,7 +1148,8 @@ LteRlcUm::DoReportBufferStatus (void)
 
   NS_LOG_LOGIC ("Send ReportBufferStatus = " << r.txQueueSize << ", " << r.txQueueHolDelay );
   m_macSapProvider->ReportBufferStatus (r);
-}
+
+ }
 
 
 void
