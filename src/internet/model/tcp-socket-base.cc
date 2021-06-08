@@ -112,7 +112,7 @@ TcpSocketBase::GetTypeId (void)
                    MakeBooleanChecker ())
     .AddAttribute ("MinRto",
                    "Minimum retransmit timeout value",
-                   TimeValue (Seconds (1.0)), // RFC 6298 says min RTO=1 sec, but Linux uses 200ms.
+                   TimeValue (MilliSeconds (200)), // RFC 6298 says min RTO=1 sec, but Linux uses 200ms.
                    // See http://www.postel.org/pipermail/end2end-interest/2004-November/004402.html
                    MakeTimeAccessor (&TcpSocketBase::SetMinRto,
                                      &TcpSocketBase::GetMinRto),

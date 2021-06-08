@@ -1,0 +1,371 @@
+Waf: Entering directory `/home/gslee2/2021-nr/ns-3-dev/build'
+[1344/2192] Compiling src/internet/model/tcp-socket-base.cc
+[2103/2192] Compiling scratch/lte_preliminary.cc
+../scratch/lte_preliminary.cc: In function ‘int main(int, char**)’:
+../scratch/lte_preliminary.cc:887:151: error: no matching function for call to ‘MakeBoundCallback(void (*)(std::ofstream*, std::ofstream*, std::ofstream*, std::ofstream*, ns3::Ptr<const ns3::ThreeGppHttpClient>), std::ofstream*, std::ofstream*, std::ofstream*, std::ofstream*)’
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1703:13: note: candidate: template<class R, class TX, class ARG> ns3::Callback<R> ns3::MakeBoundCallback(R (*)(TX), ARG)
+ Callback<R> MakeBoundCallback (R (*fnPtr)(TX), ARG a1)
+             ^
+./ns3/callback.h:1703:13: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 1 argument, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1711:16: note: candidate: template<class R, class TX, class ARG, class T1> ns3::Callback<R, T1> ns3::MakeBoundCallback(R (*)(TX, T1), ARG)
+ Callback<R,T1> MakeBoundCallback (R (*fnPtr)(TX,T1), ARG a1)
+                ^
+./ns3/callback.h:1711:16: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 2 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1719:19: note: candidate: template<class R, class TX, class ARG, class T1, class T2> ns3::Callback<R, T1, T2> ns3::MakeBoundCallback(R (*)(TX, T1, T2), ARG)
+ Callback<R,T1,T2> MakeBoundCallback (R (*fnPtr)(TX,T1,T2), ARG a1)
+                   ^
+./ns3/callback.h:1719:19: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 3 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1727:22: note: candidate: template<class R, class TX, class ARG, class T1, class T2, class T3> ns3::Callback<R, T1, T2, T3> ns3::MakeBoundCallback(R (*)(TX, T1, T2, T3), ARG)
+ Callback<R,T1,T2,T3> MakeBoundCallback (R (*fnPtr)(TX,T1,T2,T3), ARG a1)
+                      ^
+./ns3/callback.h:1727:22: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 4 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1735:25: note: candidate: template<class R, class TX, class ARG, class T1, class T2, class T3, class T4> ns3::Callback<R, T1, T2, T3, T4> ns3::MakeBoundCallback(R (*)(TX, T1, T2, T3, T4), ARG)
+ Callback<R,T1,T2,T3,T4> MakeBoundCallback (R (*fnPtr)(TX,T1,T2,T3,T4), ARG a1)
+                         ^
+./ns3/callback.h:1735:25: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 2 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1743:28: note: candidate: template<class R, class TX, class ARG, class T1, class T2, class T3, class T4, class T5> ns3::Callback<R, T1, T2, T3, T4, T5> ns3::MakeBoundCallback(R (*)(TX, T1, T2, T3, T4, T5), ARG)
+ Callback<R,T1,T2,T3,T4,T5> MakeBoundCallback (R (*fnPtr)(TX,T1,T2,T3,T4,T5), ARG a1)
+                            ^
+./ns3/callback.h:1743:28: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 6 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1751:31: note: candidate: template<class R, class TX, class ARG, class T1, class T2, class T3, class T4, class T5, class T6> ns3::Callback<R, T1, T2, T3, T4, T5, T6> ns3::MakeBoundCallback(R (*)(TX, T1, T2, T3, T4, T5, T6), ARG)
+ Callback<R,T1,T2,T3,T4,T5,T6> MakeBoundCallback (R (*fnPtr)(TX,T1,T2,T3,T4,T5,T6), ARG a1)
+                               ^
+./ns3/callback.h:1751:31: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 7 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1759:34: note: candidate: template<class R, class TX, class ARG, class T1, class T2, class T3, class T4, class T5, class T6, class T7> ns3::Callback<R, T3, T4, T5, T6, T7, T8, T9> ns3::MakeBoundCallback(R (*)(TX, T1, T2, T3, T4, T5, T6, T7), ARG)
+ Callback<R,T1,T2,T3,T4,T5,T6,T7> MakeBoundCallback (R (*fnPtr)(TX,T1,T2,T3,T4,T5,T6,T7), ARG a1)
+                                  ^
+./ns3/callback.h:1759:34: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 8 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1767:37: note: candidate: template<class R, class TX, class ARG, class T1, class T2, class T3, class T4, class T5, class T6, class T7, class T8> ns3::Callback<R, T1, T2, T3, T4, T5, T6, T7, T8> ns3::MakeBoundCallback(R (*)(TX, T1, T2, T3, T4, T5, T6, T7, T8), ARG)
+ Callback<R,T1,T2,T3,T4,T5,T6,T7,T8> MakeBoundCallback (R (*fnPtr)(TX,T1,T2,T3,T4,T5,T6,T7,T8), ARG a1)
+                                     ^
+./ns3/callback.h:1767:37: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 9 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1792:13: note: candidate: template<class R, class TX1, class TX2, class ARG1, class ARG2> ns3::Callback<R> ns3::MakeBoundCallback(R (*)(TX1, TX2), ARG1, ARG2)
+ Callback<R> MakeBoundCallback (R (*fnPtr)(TX1,TX2), ARG1 a1, ARG2 a2)
+             ^
+./ns3/callback.h:1792:13: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 2 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1800:16: note: candidate: template<class R, class TX1, class TX2, class ARG1, class ARG2, class T1> ns3::Callback<R, T1> ns3::MakeBoundCallback(R (*)(TX1, TX2, T1), ARG1, ARG2)
+ Callback<R,T1> MakeBoundCallback (R (*fnPtr)(TX1,TX2,T1), ARG1 a1, ARG2 a2)
+                ^
+./ns3/callback.h:1800:16: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 3 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1808:19: note: candidate: template<class R, class TX1, class TX2, class ARG1, class ARG2, class T1, class T2> ns3::Callback<R, T1, T2> ns3::MakeBoundCallback(R (*)(TX1, TX2, T1, T2), ARG1, ARG2)
+ Callback<R,T1,T2> MakeBoundCallback (R (*fnPtr)(TX1,TX2,T1,T2), ARG1 a1, ARG2 a2)
+                   ^
+./ns3/callback.h:1808:19: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 4 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1816:22: note: candidate: template<class R, class TX1, class TX2, class ARG1, class ARG2, class T1, class T2, class T3> ns3::Callback<R, T1, T2, T3> ns3::MakeBoundCallback(R (*)(TX1, TX2, T1, T2, T3), ARG1, ARG2)
+ Callback<R,T1,T2,T3> MakeBoundCallback (R (*fnPtr)(TX1,TX2,T1,T2,T3), ARG1 a1, ARG2 a2)
+                      ^
+./ns3/callback.h:1816:22: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 3 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1824:25: note: candidate: template<class R, class TX1, class TX2, class ARG1, class ARG2, class T1, class T2, class T3, class T4> ns3::Callback<R, T1, T2, T3, T4> ns3::MakeBoundCallback(R (*)(TX1, TX2, T1, T2, T3, T4), ARG1, ARG2)
+ Callback<R,T1,T2,T3,T4> MakeBoundCallback (R (*fnPtr)(TX1,TX2,T1,T2,T3,T4), ARG1 a1, ARG2 a2)
+                         ^
+./ns3/callback.h:1824:25: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 6 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1832:28: note: candidate: template<class R, class TX1, class TX2, class ARG1, class ARG2, class T1, class T2, class T3, class T4, class T5> ns3::Callback<R, T1, T2, T3, T4, T5> ns3::MakeBoundCallback(R (*)(TX1, TX2, T1, T2, T3, T4, T5), ARG1, ARG2)
+ Callback<R,T1,T2,T3,T4,T5> MakeBoundCallback (R (*fnPtr)(TX1,TX2,T1,T2,T3,T4,T5), ARG1 a1, ARG2 a2)
+                            ^
+./ns3/callback.h:1832:28: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 7 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1840:31: note: candidate: template<class R, class TX1, class TX2, class ARG1, class ARG2, class T1, class T2, class T3, class T4, class T5, class T6> ns3::Callback<R, T1, T2, T3, T4, T5, T6> ns3::MakeBoundCallback(R (*)(TX1, TX2, T1, T2, T3, T4, T5, T6), ARG1, ARG2)
+ Callback<R,T1,T2,T3,T4,T5,T6> MakeBoundCallback (R (*fnPtr)(TX1,TX2,T1,T2,T3,T4,T5,T6), ARG1 a1, ARG2 a2)
+                               ^
+./ns3/callback.h:1840:31: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 8 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1848:34: note: candidate: template<class R, class TX1, class TX2, class ARG1, class ARG2, class T1, class T2, class T3, class T4, class T5, class T6, class T7> ns3::Callback<R, T1, T2, T3, T4, T5, T6, T7> ns3::MakeBoundCallback(R (*)(TX1, TX2, T1, T2, T3, T4, T5, T6, T7), ARG1, ARG2)
+ Callback<R,T1,T2,T3,T4,T5,T6,T7> MakeBoundCallback (R (*fnPtr)(TX1,TX2,T1,T2,T3,T4,T5,T6,T7), ARG1 a1, ARG2 a2)
+                                  ^
+./ns3/callback.h:1848:34: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 9 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1876:13: note: candidate: template<class R, class TX1, class TX2, class TX3, class ARG1, class ARG2, class ARG3> ns3::Callback<R> ns3::MakeBoundCallback(R (*)(TX1, TX2, TX3), ARG1, ARG2, ARG3)
+ Callback<R> MakeBoundCallback (R (*fnPtr)(TX1,TX2,TX3), ARG1 a1, ARG2 a2, ARG3 a3)
+             ^
+./ns3/callback.h:1876:13: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 3 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1884:16: note: candidate: template<class R, class TX1, class TX2, class TX3, class ARG1, class ARG2, class ARG3, class T1> ns3::Callback<R, T1> ns3::MakeBoundCallback(R (*)(TX1, TX2, TX3, T1), ARG1, ARG2, ARG3)
+ Callback<R,T1> MakeBoundCallback (R (*fnPtr)(TX1,TX2,TX3,T1), ARG1 a1, ARG2 a2, ARG3 a3)
+                ^
+./ns3/callback.h:1884:16: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 4 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1892:19: note: candidate: template<class R, class TX1, class TX2, class TX3, class ARG1, class ARG2, class ARG3, class T1, class T2> ns3::Callback<R, T1, T2> ns3::MakeBoundCallback(R (*)(TX1, TX2, TX3, T1, T2), ARG1, ARG2, ARG3)
+ Callback<R,T1,T2> MakeBoundCallback (R (*fnPtr)(TX1,TX2,TX3,T1,T2), ARG1 a1, ARG2 a2, ARG3 a3)
+                   ^
+./ns3/callback.h:1892:19: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 4 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1900:22: note: candidate: template<class R, class TX1, class TX2, class TX3, class ARG1, class ARG2, class ARG3, class T1, class T2, class T3> ns3::Callback<R, T1, T2, T3> ns3::MakeBoundCallback(R (*)(TX1, TX2, TX3, T1, T2, T3), ARG1, ARG2, ARG3)
+ Callback<R,T1,T2,T3> MakeBoundCallback (R (*fnPtr)(TX1,TX2,TX3,T1,T2,T3), ARG1 a1, ARG2 a2, ARG3 a3)
+                      ^
+./ns3/callback.h:1900:22: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 6 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1908:25: note: candidate: template<class R, class TX1, class TX2, class TX3, class ARG1, class ARG2, class ARG3, class T1, class T2, class T3, class T4> ns3::Callback<R, T1, T2, T3, T4> ns3::MakeBoundCallback(R (*)(TX1, TX2, TX3, T1, T2, T3, T4), ARG1, ARG2, ARG3)
+ Callback<R,T1,T2,T3,T4> MakeBoundCallback (R (*fnPtr)(TX1,TX2,TX3,T1,T2,T3,T4), ARG1 a1, ARG2 a2, ARG3 a3)
+                         ^
+./ns3/callback.h:1908:25: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 7 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1916:28: note: candidate: template<class R, class TX1, class TX2, class TX3, class ARG1, class ARG2, class ARG3, class T1, class T2, class T3, class T4, class T5> ns3::Callback<R, T1, T2, T3, T4, T5> ns3::MakeBoundCallback(R (*)(TX1, TX2, TX3, T1, T2, T3, T4, T5), ARG1, ARG2, ARG3)
+ Callback<R,T1,T2,T3,T4,T5> MakeBoundCallback (R (*fnPtr)(TX1,TX2,TX3,T1,T2,T3,T4,T5), ARG1 a1, ARG2 a2, ARG3 a3)
+                            ^
+./ns3/callback.h:1916:28: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 8 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+In file included from ./ns3/trace-source-accessor.h:24:0,
+                 from ./ns3/type-id.h:25,
+                 from ./ns3/object-base.h:23,
+                 from ./ns3/object.h:29,
+                 from ./ns3/scheduler.h:25,
+                 from ./ns3/calendar-scheduler.h:25,
+                 from ./ns3/core-module.h:23,
+                 from ../scratch/lte_preliminary.cc:48:
+./ns3/callback.h:1924:31: note: candidate: template<class R, class TX1, class TX2, class TX3, class ARG1, class ARG2, class ARG3, class T1, class T2, class T3, class T4, class T5, class T6> ns3::Callback<R, T1, T2, T3, T4, T5, T6> ns3::MakeBoundCallback(R (*)(TX1, TX2, TX3, T1, T2, T3, T4, T5, T6), ARG1, ARG2, ARG3)
+ Callback<R,T1,T2,T3,T4,T5,T6> MakeBoundCallback (R (*fnPtr)(TX1,TX2,TX3,T1,T2,T3,T4,T5,T6), ARG1 a1, ARG2 a2, ARG3 a3)
+                               ^
+./ns3/callback.h:1924:31: note:   template argument deduction/substitution failed:
+../scratch/lte_preliminary.cc:887:151: note:   candidate expects 9 arguments, 5 provided
+                                                         MakeBoundCallback (&TraceConnectionClient, &cwndStream, &rttStream, &latencyStream, &rtoStream));
+                                                                                                                                                       ^
+
+Waf: Leaving directory `/home/gslee2/2021-nr/ns-3-dev/build'
+Build failed
+ -> task in 'lte_preliminary' failed with exit status 1 (run with -v to display more information)

@@ -44,11 +44,14 @@ LteRlcUm::LteRlcUm ()
 {
   NS_LOG_FUNCTION (this);
   m_reassemblingState = WAITING_S0_FULL;
+  //m_traceBufferSizeEvent = Simulator::Schedule(MilliSeconds(2), &LteRlcUm::BufferSizeTrace, this);
 }
 
 LteRlcUm::~LteRlcUm ()
 {
   NS_LOG_FUNCTION (this);
+
+  //m_traceBufferSizeEvent.Cancel();
 }
 
 TypeId
@@ -1201,6 +1204,21 @@ LteRlcUm::ExpireRbsTimer (void)
       DoReportBufferStatus ();
       m_rbsTimer = Simulator::Schedule (MilliSeconds (10), &LteRlcUm::ExpireRbsTimer, this);
     }
+}
+
+void
+LteRlcUm::BufferSizeTrace()
+{
+   std::cout<<Simulator::Now().GetSeconds() << "\t" << m_rnti << "\t" <<(uint32_t) m_lcid << "\t" << m_txBufferSize<<std::endl;
+  // write to file
+  /*if(!m_bufferSizeFile.is_open())
+  {
+    m_bufferSizeFile.open(GetBufferSizeFilename().c_str(), std::ofstream::app);
+    NS_LOG_LOGIC("File opened");
+  }
+  m_bufferSizeFile << Simulator::Now().GetSeconds() << " " << m_rnti << " " << (uint16_t) m_lcid << " " << m_txonBufferSize << std::endl;
+  */
+  m_traceBufferSizeEvent = Simulator::Schedule(MilliSeconds(10), &LteRlcUm::BufferSizeTrace, this);
 }
 
 } // namespace ns3

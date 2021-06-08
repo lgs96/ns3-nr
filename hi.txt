@@ -1,0 +1,1402 @@
+Waf: Entering directory `/home/gslee2/2021-nr/ns-3-dev/build'
+[2109/2192] Compiling scratch/nr_preliminary.cc
+[2152/2192] Linking build/scratch/nr_preliminary
+Waf: Leaving directory `/home/gslee2/2021-nr/ns-3-dev/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (3.487s)
+UE position: 10:0:1.5
+BufferSizeTrace 0.0205365 1  0
+BufferSizeTrace 0.0205365 1  0
+BufferSizeTrace 0.0205365 1  0
+BufferSizeTrace 0.0205365 1  0
+BufferSizeTrace 0.0305365 1  0
+BufferSizeTrace 0.0305365 1  0
+BufferSizeTrace 0.0305365 1  0
+BufferSizeTrace 0.0305365 1  0
+BufferSizeTrace 0.0405365 1  0
+BufferSizeTrace 0.0405365 1  0
+BufferSizeTrace 0.0405365 1  0
+BufferSizeTrace 0.0405365 1  0
+BufferSizeTrace 0.0505365 1  0
+BufferSizeTrace 0.0505365 1  0
+BufferSizeTrace 0.0505365 1  0
+BufferSizeTrace 0.0505365 1  0
+BufferSizeTrace 0.0605365 1  0
+BufferSizeTrace 0.0605365 1  0
+BufferSizeTrace 0.0605365 1  0
+BufferSizeTrace 0.0605365 1  0
+BufferSizeTrace 0.0705365 1  0
+BufferSizeTrace 0.0705365 1  0
+BufferSizeTrace 0.0705365 1  0
+BufferSizeTrace 0.0705365 1  0
+BufferSizeTrace 0.0805365 1  0
+BufferSizeTrace 0.0805365 1  0
+BufferSizeTrace 0.0805365 1  0
+BufferSizeTrace 0.0805365 1  0
+BufferSizeTrace 0.0905365 1  0
+BufferSizeTrace 0.0905365 1  0
+BufferSizeTrace 0.0905365 1  0
+BufferSizeTrace 0.0905365 1  0
+BufferSizeTrace 0.100536 1  0
+BufferSizeTrace 0.100536 1  0
+BufferSizeTrace 0.100536 1  0
+BufferSizeTrace 0.100536 1  0
+BufferSizeTrace 0.110536 1  0
+BufferSizeTrace 0.110536 1  0
+BufferSizeTrace 0.110536 1  0
+BufferSizeTrace 0.110536 1  0
+BufferSizeTrace 0.120536 1  0
+BufferSizeTrace 0.120536 1  0
+BufferSizeTrace 0.120536 1  0
+BufferSizeTrace 0.120536 1  0
+BufferSizeTrace 0.130536 1  0
+BufferSizeTrace 0.130536 1  0
+BufferSizeTrace 0.130536 1  0
+BufferSizeTrace 0.130536 1  0
+BufferSizeTrace 0.140536 1  0
+BufferSizeTrace 0.140536 1  0
+BufferSizeTrace 0.140536 1  0
+BufferSizeTrace 0.140536 1  0
+BufferSizeTrace 0.150536 1  0
+BufferSizeTrace 0.150536 1  0
+BufferSizeTrace 0.150536 1  0
+BufferSizeTrace 0.150536 1  0
+BufferSizeTrace 0.160536 1  0
+BufferSizeTrace 0.160536 1  0
+BufferSizeTrace 0.160536 1  0
+BufferSizeTrace 0.160536 1  0
+BufferSizeTrace 0.170536 1  0
+BufferSizeTrace 0.170536 1  0
+BufferSizeTrace 0.170536 1  0
+BufferSizeTrace 0.170536 1  0
+BufferSizeTrace 0.180536 1  0
+BufferSizeTrace 0.180536 1  0
+BufferSizeTrace 0.180536 1  0
+BufferSizeTrace 0.180536 1  0
+BufferSizeTrace 0.190536 1  0
+BufferSizeTrace 0.190536 1  0
+BufferSizeTrace 0.190536 1  0
+BufferSizeTrace 0.190536 1  0
+BufferSizeTrace 0.200536 1  0
+BufferSizeTrace 0.200536 1  0
+BufferSizeTrace 0.200536 1  0
+BufferSizeTrace 0.200536 1  0
+BufferSizeTrace 0.210536 1  0
+BufferSizeTrace 0.210536 1  0
+BufferSizeTrace 0.210536 1  0
+BufferSizeTrace 0.210536 1  0
+BufferSizeTrace 0.220536 1  0
+BufferSizeTrace 0.220536 1  0
+BufferSizeTrace 0.220536 1  0
+BufferSizeTrace 0.220536 1  0
+BufferSizeTrace 0.230536 1  0
+BufferSizeTrace 0.230536 1  0
+BufferSizeTrace 0.230536 1  0
+BufferSizeTrace 0.230536 1  0
+BufferSizeTrace 0.240536 1  0
+BufferSizeTrace 0.240536 1  0
+BufferSizeTrace 0.240536 1  0
+BufferSizeTrace 0.240536 1  0
+BufferSizeTrace 0.250536 1  0
+BufferSizeTrace 0.250536 1  0
+BufferSizeTrace 0.250536 1  0
+BufferSizeTrace 0.250536 1  0
+BufferSizeTrace 0.260536 1  0
+BufferSizeTrace 0.260536 1  0
+BufferSizeTrace 0.260536 1  0
+BufferSizeTrace 0.260536 1  0
+BufferSizeTrace 0.270536 1  0
+BufferSizeTrace 0.270536 1  0
+BufferSizeTrace 0.270536 1  0
+BufferSizeTrace 0.270536 1  0
+BufferSizeTrace 0.280536 1  0
+BufferSizeTrace 0.280536 1  0
+BufferSizeTrace 0.280536 1  0
+BufferSizeTrace 0.280536 1  0
+BufferSizeTrace 0.290536 1  0
+BufferSizeTrace 0.290536 1  0
+BufferSizeTrace 0.290536 1  0
+BufferSizeTrace 0.290536 1  0
+BufferSizeTrace 0.300536 1  0
+BufferSizeTrace 0.300536 1  0
+BufferSizeTrace 0.300536 1  0
+BufferSizeTrace 0.300536 1  0
+BufferSizeTrace 0.310536 1  0
+BufferSizeTrace 0.310536 1  0
+BufferSizeTrace 0.310536 1  0
+BufferSizeTrace 0.310536 1  0
+BufferSizeTrace 0.320536 1  0
+BufferSizeTrace 0.320536 1  0
+BufferSizeTrace 0.320536 1  0
+BufferSizeTrace 0.320536 1  0
+BufferSizeTrace 0.330536 1  0
+BufferSizeTrace 0.330536 1  0
+BufferSizeTrace 0.330536 1  0
+BufferSizeTrace 0.330536 1  0
+BufferSizeTrace 0.340536 1  0
+BufferSizeTrace 0.340536 1  0
+BufferSizeTrace 0.340536 1  0
+BufferSizeTrace 0.340536 1  0
+BufferSizeTrace 0.350536 1  0
+BufferSizeTrace 0.350536 1  0
+BufferSizeTrace 0.350536 1  0
+BufferSizeTrace 0.350536 1  0
+BufferSizeTrace 0.360536 1  0
+BufferSizeTrace 0.360536 1  0
+BufferSizeTrace 0.360536 1  0
+BufferSizeTrace 0.360536 1  0
+BufferSizeTrace 0.370536 1  0
+BufferSizeTrace 0.370536 1  0
+BufferSizeTrace 0.370536 1  0
+BufferSizeTrace 0.370536 1  0
+BufferSizeTrace 0.380536 1  0
+BufferSizeTrace 0.380536 1  0
+BufferSizeTrace 0.380536 1  0
+BufferSizeTrace 0.380536 1  0
+BufferSizeTrace 0.390536 1  0
+BufferSizeTrace 0.390536 1  0
+BufferSizeTrace 0.390536 1  0
+BufferSizeTrace 0.390536 1  0
+BufferSizeTrace 0.400536 1  0
+BufferSizeTrace 0.400536 1  0
+BufferSizeTrace 0.400536 1  0
+BufferSizeTrace 0.400536 1  58
+0.402 UE: 1 Sending SR to PHY in slot FrameNum: 40 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.410536 1  0
+BufferSizeTrace 0.410536 1  0
+BufferSizeTrace 0.410536 1  0
+BufferSizeTrace 0.410536 1  2
+BufferSizeTrace 0.420536 1  0
+BufferSizeTrace 0.420536 1  0
+BufferSizeTrace 0.420536 1  0
+BufferSizeTrace 0.420536 1  2
+0.422 UE: 1 Sending SR to PHY in slot FrameNum: 42 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.430536 1  0
+BufferSizeTrace 0.430536 1  0
+BufferSizeTrace 0.430536 1  0
+BufferSizeTrace 0.430536 1  5954
+0.432 UE: 1 Sending SR to PHY in slot FrameNum: 43 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.440536 1  0
+BufferSizeTrace 0.440536 1  0
+BufferSizeTrace 0.440536 1  0
+BufferSizeTrace 0.440536 1  0
+0.442 UE: 1 Sending SR to PHY in slot FrameNum: 44 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.450536 1  0
+BufferSizeTrace 0.450536 1  0
+BufferSizeTrace 0.450536 1  0
+BufferSizeTrace 0.450536 1  0
+0.452 UE: 1 Sending SR to PHY in slot FrameNum: 45 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.460536 1  0
+BufferSizeTrace 0.460536 1  0
+BufferSizeTrace 0.460536 1  0
+BufferSizeTrace 0.460536 1  0
+0.462 UE: 1 Sending SR to PHY in slot FrameNum: 46 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.470536 1  0
+BufferSizeTrace 0.470536 1  0
+BufferSizeTrace 0.470536 1  0
+BufferSizeTrace 0.470536 1  0
+0.472 UE: 1 Sending SR to PHY in slot FrameNum: 47 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.480536 1  0
+BufferSizeTrace 0.480536 1  0
+BufferSizeTrace 0.480536 1  0
+BufferSizeTrace 0.480536 1  0
+0.482 UE: 1 Sending SR to PHY in slot FrameNum: 48 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.490536 1  3348
+BufferSizeTrace 0.490536 1  0
+BufferSizeTrace 0.490536 1  0
+BufferSizeTrace 0.490536 1  0
+BufferSizeTrace 0.500536 1  0
+BufferSizeTrace 0.500536 1  0
+BufferSizeTrace 0.500536 1  0
+BufferSizeTrace 0.500536 1  339840
+0.502 UE: 1 Sending SR to PHY in slot FrameNum: 50 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.510536 1  3348
+BufferSizeTrace 0.510536 1  0
+BufferSizeTrace 0.510536 1  0
+BufferSizeTrace 0.510536 1  169320
+BufferSizeTrace 0.520536 1  0
+BufferSizeTrace 0.520536 1  0
+BufferSizeTrace 0.520536 1  0
+BufferSizeTrace 0.520536 1  479316
+0.522 UE: 1 Sending SR to PHY in slot FrameNum: 52 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.530536 1  3348
+BufferSizeTrace 0.530536 1  0
+BufferSizeTrace 0.530536 1  0
+BufferSizeTrace 0.530536 1  308796
+E2E latency: 0.110015
+BufferSizeTrace 0.540536 1  0
+BufferSizeTrace 0.540536 1  0
+BufferSizeTrace 0.540536 1  0
+BufferSizeTrace 0.540536 1  0
+BufferSizeTrace 0.550536 1  0
+BufferSizeTrace 0.550536 1  0
+BufferSizeTrace 0.550536 1  0
+BufferSizeTrace 0.550536 1  54
+0.552 UE: 1 Sending SR to PHY in slot FrameNum: 55 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.560536 1  0
+BufferSizeTrace 0.560536 1  0
+BufferSizeTrace 0.560536 1  0
+BufferSizeTrace 0.560536 1  0
+BufferSizeTrace 0.570536 1  0
+BufferSizeTrace 0.570536 1  0
+BufferSizeTrace 0.570536 1  0
+BufferSizeTrace 0.570536 1  0
+BufferSizeTrace 0.580536 1  0
+BufferSizeTrace 0.580536 1  0
+BufferSizeTrace 0.580536 1  0
+BufferSizeTrace 0.580536 1  0
+BufferSizeTrace 0.590536 1  0
+BufferSizeTrace 0.590536 1  0
+BufferSizeTrace 0.590536 1  0
+BufferSizeTrace 0.590536 1  0
+BufferSizeTrace 0.600536 1  0
+BufferSizeTrace 0.600536 1  0
+BufferSizeTrace 0.600536 1  0
+BufferSizeTrace 0.600536 1  0
+BufferSizeTrace 0.610536 1  0
+BufferSizeTrace 0.610536 1  0
+BufferSizeTrace 0.610536 1  0
+BufferSizeTrace 0.610536 1  0
+BufferSizeTrace 0.620536 1  0
+BufferSizeTrace 0.620536 1  0
+BufferSizeTrace 0.620536 1  0
+BufferSizeTrace 0.620536 1  0
+BufferSizeTrace 0.630536 1  0
+BufferSizeTrace 0.630536 1  0
+BufferSizeTrace 0.630536 1  0
+BufferSizeTrace 0.630536 1  0
+BufferSizeTrace 0.640536 1  0
+BufferSizeTrace 0.640536 1  0
+BufferSizeTrace 0.640536 1  0
+BufferSizeTrace 0.640536 1  0
+BufferSizeTrace 0.650536 1  0
+BufferSizeTrace 0.650536 1  0
+BufferSizeTrace 0.650536 1  0
+BufferSizeTrace 0.650536 1  0
+BufferSizeTrace 0.660536 1  0
+BufferSizeTrace 0.660536 1  0
+BufferSizeTrace 0.660536 1  0
+BufferSizeTrace 0.660536 1  0
+BufferSizeTrace 0.670536 1  0
+BufferSizeTrace 0.670536 1  0
+BufferSizeTrace 0.670536 1  0
+BufferSizeTrace 0.670536 1  0
+BufferSizeTrace 0.680536 1  0
+BufferSizeTrace 0.680536 1  0
+BufferSizeTrace 0.680536 1  0
+BufferSizeTrace 0.680536 1  0
+BufferSizeTrace 0.690536 1  0
+BufferSizeTrace 0.690536 1  0
+BufferSizeTrace 0.690536 1  0
+BufferSizeTrace 0.690536 1  713900
+0.692 UE: 1 Sending SR to PHY in slot FrameNum: 69 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.700536 1  3294
+BufferSizeTrace 0.700536 1  0
+BufferSizeTrace 0.700536 1  0
+BufferSizeTrace 0.700536 1  543380
+BufferSizeTrace 0.710536 1  25596
+BufferSizeTrace 0.710536 1  0
+BufferSizeTrace 0.710536 1  0
+BufferSizeTrace 0.710536 1  56405
+BufferSizeTrace 0.720536 1  0
+BufferSizeTrace 0.720536 1  0
+BufferSizeTrace 0.720536 1  0
+BufferSizeTrace 0.720536 1  440376
+0.722 UE: 1 Sending SR to PHY in slot FrameNum: 72 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.730536 1  3294
+BufferSizeTrace 0.730536 1  0
+BufferSizeTrace 0.730536 1  0
+BufferSizeTrace 0.730536 1  269856
+E2E latency: 0.0508079
+BufferSizeTrace 0.740536 1  0
+BufferSizeTrace 0.740536 1  0
+BufferSizeTrace 0.740536 1  0
+BufferSizeTrace 0.740536 1  0
+0.742 UE: 1 Sending SR to PHY in slot FrameNum: 74 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.750536 1  3294
+BufferSizeTrace 0.750536 1  0
+BufferSizeTrace 0.750536 1  0
+BufferSizeTrace 0.750536 1  601200
+BufferSizeTrace 0.760536 1  9759
+BufferSizeTrace 0.760536 1  0
+BufferSizeTrace 0.760536 1  0
+BufferSizeTrace 0.760536 1  138574
+BufferSizeTrace 0.770536 1  0
+BufferSizeTrace 0.770536 1  0
+BufferSizeTrace 0.770536 1  0
+BufferSizeTrace 0.770536 1  382556
+0.772 UE: 1 Sending SR to PHY in slot FrameNum: 77 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.780536 1  3294
+BufferSizeTrace 0.780536 1  0
+BufferSizeTrace 0.780536 1  0
+BufferSizeTrace 0.780536 1  212036
+E2E latency: 0.0455154
+BufferSizeTrace 0.790536 1  0
+BufferSizeTrace 0.790536 1  0
+BufferSizeTrace 0.790536 1  0
+BufferSizeTrace 0.790536 1  829540
+0.792 UE: 1 Sending SR to PHY in slot FrameNum: 79 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.800536 1  0
+BufferSizeTrace 0.800536 1  0
+BufferSizeTrace 0.800536 1  0
+BufferSizeTrace 0.800536 1  683368
+BufferSizeTrace 0.810536 1  21222
+BufferSizeTrace 0.810536 1  0
+BufferSizeTrace 0.810536 1  0
+BufferSizeTrace 0.810536 1  271914
+BufferSizeTrace 0.820536 1  0
+BufferSizeTrace 0.820536 1  0
+BufferSizeTrace 0.820536 1  0
+BufferSizeTrace 0.820536 1  0
+BufferSizeTrace 0.830536 1  0
+BufferSizeTrace 0.830536 1  0
+BufferSizeTrace 0.830536 1  0
+BufferSizeTrace 0.830536 1  249216
+0.832 UE: 1 Sending SR to PHY in slot FrameNum: 83 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.840536 1  0
+BufferSizeTrace 0.840536 1  0
+BufferSizeTrace 0.840536 1  0
+BufferSizeTrace 0.840536 1  103044
+E2E latency: 0.0550058
+BufferSizeTrace 0.850536 1  0
+BufferSizeTrace 0.850536 1  0
+BufferSizeTrace 0.850536 1  0
+BufferSizeTrace 0.850536 1  887576
+0.852 UE: 1 Sending SR to PHY in slot FrameNum: 85 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.860536 1  3294
+BufferSizeTrace 0.860536 1  0
+BufferSizeTrace 0.860536 1  0
+BufferSizeTrace 0.860536 1  717061
+BufferSizeTrace 0.870536 1  25596
+BufferSizeTrace 0.870536 1  0
+BufferSizeTrace 0.870536 1  0
+BufferSizeTrace 0.870536 1  230087
+BufferSizeTrace 0.880536 1  0
+BufferSizeTrace 0.880536 1  0
+BufferSizeTrace 0.880536 1  0
+BufferSizeTrace 0.880536 1  0
+BufferSizeTrace 0.890536 1  0
+BufferSizeTrace 0.890536 1  0
+BufferSizeTrace 0.890536 1  0
+BufferSizeTrace 0.890536 1  266916
+0.892 UE: 1 Sending SR to PHY in slot FrameNum: 89 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.900536 1  3294
+BufferSizeTrace 0.900536 1  0
+BufferSizeTrace 0.900536 1  0
+BufferSizeTrace 0.900536 1  96396
+E2E latency: 0.0565209
+BufferSizeTrace 0.910536 1  0
+BufferSizeTrace 0.910536 1  0
+BufferSizeTrace 0.910536 1  0
+BufferSizeTrace 0.910536 1  945396
+0.912 UE: 1 Sending SR to PHY in slot FrameNum: 91 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.920536 1  0
+BufferSizeTrace 0.920536 1  0
+BufferSizeTrace 0.920536 1  0
+BufferSizeTrace 0.920536 1  799230
+BufferSizeTrace 0.930536 1  21168
+BufferSizeTrace 0.930536 1  0
+BufferSizeTrace 0.930536 1  0
+BufferSizeTrace 0.930536 1  387775
+BufferSizeTrace 0.940536 1  43416
+BufferSizeTrace 0.940536 1  0
+BufferSizeTrace 0.940536 1  0
+BufferSizeTrace 0.940536 1  0
+BufferSizeTrace 0.950536 1  0
+BufferSizeTrace 0.950536 1  0
+BufferSizeTrace 0.950536 1  0
+BufferSizeTrace 0.950536 1  133576
+0.952 UE: 1 Sending SR to PHY in slot FrameNum: 95 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.960536 1  0
+BufferSizeTrace 0.960536 1  0
+BufferSizeTrace 0.960536 1  0
+BufferSizeTrace 0.960536 1  0
+E2E latency: 0.0540108
+BufferSizeTrace 0.970536 1  0
+BufferSizeTrace 0.970536 1  0
+BufferSizeTrace 0.970536 1  0
+BufferSizeTrace 0.970536 1  1002410
+0.972 UE: 1 Sending SR to PHY in slot FrameNum: 97 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 0.980536 1  3294
+BufferSizeTrace 0.980536 1  0
+BufferSizeTrace 0.980536 1  0
+BufferSizeTrace 0.980536 1  831890
+BufferSizeTrace 0.990536 1  25596
+BufferSizeTrace 0.990536 1  0
+BufferSizeTrace 0.990536 1  0
+BufferSizeTrace 0.990536 1  344915
+BufferSizeTrace 1.00054 1  30009
+BufferSizeTrace 1.00054 1  0
+BufferSizeTrace 1.00054 1  0
+BufferSizeTrace 1.00054 1  0
+BufferSizeTrace 1.01054 1  0
+BufferSizeTrace 1.01054 1  0
+BufferSizeTrace 1.01054 1  0
+BufferSizeTrace 1.01054 1  151866
+1.012 UE: 1 Sending SR to PHY in slot FrameNum: 101 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.02054 1  3348
+BufferSizeTrace 1.02054 1  0
+BufferSizeTrace 1.02054 1  0
+BufferSizeTrace 1.02054 1  0
+E2E latency: 0.0575058
+BufferSizeTrace 1.03054 1  0
+BufferSizeTrace 1.03054 1  0
+BufferSizeTrace 1.03054 1  0
+BufferSizeTrace 1.03054 1  1060284
+1.032 UE: 1 Sending SR to PHY in slot FrameNum: 103 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.04054 1  0
+BufferSizeTrace 1.04054 1  0
+BufferSizeTrace 1.04054 1  0
+BufferSizeTrace 1.04054 1  914114
+BufferSizeTrace 1.05054 1  21168
+BufferSizeTrace 1.05054 1  0
+BufferSizeTrace 1.05054 1  0
+BufferSizeTrace 1.05054 1  502659
+BufferSizeTrace 1.06054 1  43470
+BufferSizeTrace 1.06054 1  0
+BufferSizeTrace 1.06054 1  0
+BufferSizeTrace 1.06054 1  15684
+BufferSizeTrace 1.07054 1  0
+BufferSizeTrace 1.07054 1  0
+BufferSizeTrace 1.07054 1  0
+BufferSizeTrace 1.07054 1  18526
+1.072 UE: 1 Sending SR to PHY in slot FrameNum: 107 SubFrameNum: 2 SlotNum: 0
+E2E latency: 0.0540164
+BufferSizeTrace 1.08054 1  0
+BufferSizeTrace 1.08054 1  0
+BufferSizeTrace 1.08054 1  0
+BufferSizeTrace 1.08054 1  0
+1.082 UE: 1 Sending SR to PHY in slot FrameNum: 108 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.09054 1  5552
+BufferSizeTrace 1.09054 1  0
+BufferSizeTrace 1.09054 1  0
+BufferSizeTrace 1.09054 1  108
+1.092 UE: 1 Sending SR to PHY in slot FrameNum: 109 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.10054 1  0
+BufferSizeTrace 1.10054 1  0
+BufferSizeTrace 1.10054 1  0
+BufferSizeTrace 1.10054 1  108
+1.102 UE: 1 Sending SR to PHY in slot FrameNum: 110 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.11054 1  3294
+BufferSizeTrace 1.11054 1  0
+BufferSizeTrace 1.11054 1  0
+BufferSizeTrace 1.11054 1  947806
+BufferSizeTrace 1.12054 1  9759
+BufferSizeTrace 1.12054 1  0
+BufferSizeTrace 1.12054 1  0
+BufferSizeTrace 1.12054 1  485180
+BufferSizeTrace 1.13054 1  30927
+BufferSizeTrace 1.13054 1  0
+BufferSizeTrace 1.13054 1  0
+BufferSizeTrace 1.13054 1  0
+BufferSizeTrace 1.14054 1  0
+BufferSizeTrace 1.14054 1  0
+BufferSizeTrace 1.14054 1  0
+BufferSizeTrace 1.14054 1  36226
+1.142 UE: 1 Sending SR to PHY in slot FrameNum: 114 SubFrameNum: 2 SlotNum: 0
+E2E latency: 0.0485108
+BufferSizeTrace 1.15054 1  0
+BufferSizeTrace 1.15054 1  0
+BufferSizeTrace 1.15054 1  0
+BufferSizeTrace 1.15054 1  0
+1.152 UE: 1 Sending SR to PHY in slot FrameNum: 115 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.16054 1  0
+BufferSizeTrace 1.16054 1  0
+BufferSizeTrace 1.16054 1  0
+BufferSizeTrace 1.16054 1  1008160
+BufferSizeTrace 1.17054 1  21168
+BufferSizeTrace 1.17054 1  0
+BufferSizeTrace 1.17054 1  0
+BufferSizeTrace 1.17054 1  521185
+BufferSizeTrace 1.18054 1  43470
+BufferSizeTrace 1.18054 1  0
+BufferSizeTrace 1.18054 1  0
+BufferSizeTrace 1.18054 1  34210
+E2E latency: 0.0315093
+BufferSizeTrace 1.19054 1  0
+BufferSizeTrace 1.19054 1  0
+BufferSizeTrace 1.19054 1  0
+BufferSizeTrace 1.19054 1  1154276
+1.192 UE: 1 Sending SR to PHY in slot FrameNum: 119 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.20054 1  0
+BufferSizeTrace 1.20054 1  0
+BufferSizeTrace 1.20054 1  0
+BufferSizeTrace 1.20054 1  1008104
+BufferSizeTrace 1.21054 1  21222
+BufferSizeTrace 1.21054 1  0
+BufferSizeTrace 1.21054 1  0
+BufferSizeTrace 1.21054 1  521130
+BufferSizeTrace 1.22054 1  43470
+BufferSizeTrace 1.22054 1  0
+BufferSizeTrace 1.22054 1  0
+BufferSizeTrace 1.22054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 1.23054 1  0
+BufferSizeTrace 1.23054 1  0
+BufferSizeTrace 1.23054 1  0
+BufferSizeTrace 1.23054 1  1154276
+1.232 UE: 1 Sending SR to PHY in slot FrameNum: 123 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.24054 1  0
+BufferSizeTrace 1.24054 1  0
+BufferSizeTrace 1.24054 1  0
+BufferSizeTrace 1.24054 1  1008104
+BufferSizeTrace 1.25054 1  21222
+BufferSizeTrace 1.25054 1  0
+BufferSizeTrace 1.25054 1  0
+BufferSizeTrace 1.25054 1  521130
+BufferSizeTrace 1.26054 1  43470
+BufferSizeTrace 1.26054 1  0
+BufferSizeTrace 1.26054 1  0
+BufferSizeTrace 1.26054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 1.27054 1  0
+BufferSizeTrace 1.27054 1  0
+BufferSizeTrace 1.27054 1  0
+BufferSizeTrace 1.27054 1  1154276
+1.272 UE: 1 Sending SR to PHY in slot FrameNum: 127 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.28054 1  0
+BufferSizeTrace 1.28054 1  0
+BufferSizeTrace 1.28054 1  0
+BufferSizeTrace 1.28054 1  1008104
+BufferSizeTrace 1.29054 1  21222
+BufferSizeTrace 1.29054 1  0
+BufferSizeTrace 1.29054 1  0
+BufferSizeTrace 1.29054 1  521130
+BufferSizeTrace 1.30054 1  43470
+BufferSizeTrace 1.30054 1  0
+BufferSizeTrace 1.30054 1  0
+BufferSizeTrace 1.30054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 1.31054 1  0
+BufferSizeTrace 1.31054 1  0
+BufferSizeTrace 1.31054 1  0
+BufferSizeTrace 1.31054 1  1154276
+1.312 UE: 1 Sending SR to PHY in slot FrameNum: 131 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.32054 1  0
+BufferSizeTrace 1.32054 1  0
+BufferSizeTrace 1.32054 1  0
+BufferSizeTrace 1.32054 1  1008104
+BufferSizeTrace 1.33054 1  21222
+BufferSizeTrace 1.33054 1  0
+BufferSizeTrace 1.33054 1  0
+BufferSizeTrace 1.33054 1  521130
+BufferSizeTrace 1.34054 1  43470
+BufferSizeTrace 1.34054 1  0
+BufferSizeTrace 1.34054 1  0
+BufferSizeTrace 1.34054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 1.35054 1  0
+BufferSizeTrace 1.35054 1  0
+BufferSizeTrace 1.35054 1  0
+BufferSizeTrace 1.35054 1  1154276
+1.352 UE: 1 Sending SR to PHY in slot FrameNum: 135 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.36054 1  0
+BufferSizeTrace 1.36054 1  0
+BufferSizeTrace 1.36054 1  0
+BufferSizeTrace 1.36054 1  1008104
+BufferSizeTrace 1.37054 1  21222
+BufferSizeTrace 1.37054 1  0
+BufferSizeTrace 1.37054 1  0
+BufferSizeTrace 1.37054 1  521130
+BufferSizeTrace 1.38054 1  43470
+BufferSizeTrace 1.38054 1  0
+BufferSizeTrace 1.38054 1  0
+BufferSizeTrace 1.38054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 1.39054 1  0
+BufferSizeTrace 1.39054 1  0
+BufferSizeTrace 1.39054 1  0
+BufferSizeTrace 1.39054 1  1154276
+1.392 UE: 1 Sending SR to PHY in slot FrameNum: 139 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.40054 1  0
+BufferSizeTrace 1.40054 1  0
+BufferSizeTrace 1.40054 1  0
+BufferSizeTrace 1.40054 1  1008104
+BufferSizeTrace 1.41054 1  21222
+BufferSizeTrace 1.41054 1  0
+BufferSizeTrace 1.41054 1  0
+BufferSizeTrace 1.41054 1  521130
+BufferSizeTrace 1.42054 1  43470
+BufferSizeTrace 1.42054 1  0
+BufferSizeTrace 1.42054 1  0
+BufferSizeTrace 1.42054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 1.43054 1  0
+BufferSizeTrace 1.43054 1  0
+BufferSizeTrace 1.43054 1  0
+BufferSizeTrace 1.43054 1  1154276
+1.432 UE: 1 Sending SR to PHY in slot FrameNum: 143 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.44054 1  0
+BufferSizeTrace 1.44054 1  0
+BufferSizeTrace 1.44054 1  0
+BufferSizeTrace 1.44054 1  1008104
+BufferSizeTrace 1.45054 1  21222
+BufferSizeTrace 1.45054 1  0
+BufferSizeTrace 1.45054 1  0
+BufferSizeTrace 1.45054 1  521130
+BufferSizeTrace 1.46054 1  43470
+BufferSizeTrace 1.46054 1  0
+BufferSizeTrace 1.46054 1  0
+BufferSizeTrace 1.46054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 1.47054 1  0
+BufferSizeTrace 1.47054 1  0
+BufferSizeTrace 1.47054 1  0
+BufferSizeTrace 1.47054 1  1154384
+1.472 UE: 1 Sending SR to PHY in slot FrameNum: 147 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.48054 1  0
+BufferSizeTrace 1.48054 1  0
+BufferSizeTrace 1.48054 1  0
+BufferSizeTrace 1.48054 1  1008215
+BufferSizeTrace 1.49054 1  21168
+BufferSizeTrace 1.49054 1  0
+BufferSizeTrace 1.49054 1  0
+BufferSizeTrace 1.49054 1  521240
+BufferSizeTrace 1.50054 1  43470
+BufferSizeTrace 1.50054 1  0
+BufferSizeTrace 1.50054 1  0
+BufferSizeTrace 1.50054 1  34266
+E2E latency: 0.0340093
+BufferSizeTrace 1.51054 1  0
+BufferSizeTrace 1.51054 1  0
+BufferSizeTrace 1.51054 1  0
+BufferSizeTrace 1.51054 1  1154276
+1.512 UE: 1 Sending SR to PHY in slot FrameNum: 151 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.52054 1  0
+BufferSizeTrace 1.52054 1  0
+BufferSizeTrace 1.52054 1  0
+BufferSizeTrace 1.52054 1  1008104
+BufferSizeTrace 1.53054 1  21222
+BufferSizeTrace 1.53054 1  0
+BufferSizeTrace 1.53054 1  0
+BufferSizeTrace 1.53054 1  521130
+BufferSizeTrace 1.54054 1  43470
+BufferSizeTrace 1.54054 1  0
+BufferSizeTrace 1.54054 1  0
+BufferSizeTrace 1.54054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 1.55054 1  0
+BufferSizeTrace 1.55054 1  0
+BufferSizeTrace 1.55054 1  0
+BufferSizeTrace 1.55054 1  1154276
+1.552 UE: 1 Sending SR to PHY in slot FrameNum: 155 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.56054 1  0
+BufferSizeTrace 1.56054 1  0
+BufferSizeTrace 1.56054 1  0
+BufferSizeTrace 1.56054 1  1008104
+BufferSizeTrace 1.57054 1  21222
+BufferSizeTrace 1.57054 1  0
+BufferSizeTrace 1.57054 1  0
+BufferSizeTrace 1.57054 1  521130
+BufferSizeTrace 1.58054 1  43470
+BufferSizeTrace 1.58054 1  0
+BufferSizeTrace 1.58054 1  0
+BufferSizeTrace 1.58054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 1.59054 1  0
+BufferSizeTrace 1.59054 1  0
+BufferSizeTrace 1.59054 1  0
+BufferSizeTrace 1.59054 1  1154276
+1.592 UE: 1 Sending SR to PHY in slot FrameNum: 159 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.60054 1  0
+BufferSizeTrace 1.60054 1  0
+BufferSizeTrace 1.60054 1  0
+BufferSizeTrace 1.60054 1  1008104
+BufferSizeTrace 1.61054 1  21222
+BufferSizeTrace 1.61054 1  0
+BufferSizeTrace 1.61054 1  0
+BufferSizeTrace 1.61054 1  521130
+BufferSizeTrace 1.62054 1  43470
+BufferSizeTrace 1.62054 1  0
+BufferSizeTrace 1.62054 1  0
+BufferSizeTrace 1.62054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 1.63054 1  0
+BufferSizeTrace 1.63054 1  0
+BufferSizeTrace 1.63054 1  0
+BufferSizeTrace 1.63054 1  1154276
+1.632 UE: 1 Sending SR to PHY in slot FrameNum: 163 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.64054 1  0
+BufferSizeTrace 1.64054 1  0
+BufferSizeTrace 1.64054 1  0
+BufferSizeTrace 1.64054 1  1008104
+BufferSizeTrace 1.65054 1  21222
+BufferSizeTrace 1.65054 1  0
+BufferSizeTrace 1.65054 1  0
+BufferSizeTrace 1.65054 1  521130
+BufferSizeTrace 1.66054 1  43470
+BufferSizeTrace 1.66054 1  0
+BufferSizeTrace 1.66054 1  0
+BufferSizeTrace 1.66054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 1.67054 1  0
+BufferSizeTrace 1.67054 1  0
+BufferSizeTrace 1.67054 1  0
+BufferSizeTrace 1.67054 1  1154276
+1.672 UE: 1 Sending SR to PHY in slot FrameNum: 167 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.68054 1  0
+BufferSizeTrace 1.68054 1  0
+BufferSizeTrace 1.68054 1  0
+BufferSizeTrace 1.68054 1  1008104
+BufferSizeTrace 1.69054 1  21222
+BufferSizeTrace 1.69054 1  0
+BufferSizeTrace 1.69054 1  0
+BufferSizeTrace 1.69054 1  521130
+BufferSizeTrace 1.70054 1  43470
+BufferSizeTrace 1.70054 1  0
+BufferSizeTrace 1.70054 1  0
+BufferSizeTrace 1.70054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 1.71054 1  0
+BufferSizeTrace 1.71054 1  0
+BufferSizeTrace 1.71054 1  0
+BufferSizeTrace 1.71054 1  1154276
+1.712 UE: 1 Sending SR to PHY in slot FrameNum: 171 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.72054 1  0
+BufferSizeTrace 1.72054 1  0
+BufferSizeTrace 1.72054 1  0
+BufferSizeTrace 1.72054 1  1008104
+BufferSizeTrace 1.73054 1  21222
+BufferSizeTrace 1.73054 1  0
+BufferSizeTrace 1.73054 1  0
+BufferSizeTrace 1.73054 1  521130
+BufferSizeTrace 1.74054 1  43470
+BufferSizeTrace 1.74054 1  0
+BufferSizeTrace 1.74054 1  0
+BufferSizeTrace 1.74054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 1.75054 1  0
+BufferSizeTrace 1.75054 1  0
+BufferSizeTrace 1.75054 1  0
+BufferSizeTrace 1.75054 1  1154276
+1.752 UE: 1 Sending SR to PHY in slot FrameNum: 175 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.76054 1  0
+BufferSizeTrace 1.76054 1  0
+BufferSizeTrace 1.76054 1  0
+BufferSizeTrace 1.76054 1  1008104
+BufferSizeTrace 1.77054 1  21222
+BufferSizeTrace 1.77054 1  0
+BufferSizeTrace 1.77054 1  0
+BufferSizeTrace 1.77054 1  521130
+BufferSizeTrace 1.78054 1  43470
+BufferSizeTrace 1.78054 1  0
+BufferSizeTrace 1.78054 1  0
+BufferSizeTrace 1.78054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 1.79054 1  0
+BufferSizeTrace 1.79054 1  0
+BufferSizeTrace 1.79054 1  0
+BufferSizeTrace 1.79054 1  1154276
+1.792 UE: 1 Sending SR to PHY in slot FrameNum: 179 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.80054 1  0
+BufferSizeTrace 1.80054 1  0
+BufferSizeTrace 1.80054 1  0
+BufferSizeTrace 1.80054 1  1008104
+BufferSizeTrace 1.81054 1  21222
+BufferSizeTrace 1.81054 1  0
+BufferSizeTrace 1.81054 1  0
+BufferSizeTrace 1.81054 1  521130
+BufferSizeTrace 1.82054 1  43470
+BufferSizeTrace 1.82054 1  0
+BufferSizeTrace 1.82054 1  0
+BufferSizeTrace 1.82054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 1.83054 1  0
+BufferSizeTrace 1.83054 1  0
+BufferSizeTrace 1.83054 1  0
+BufferSizeTrace 1.83054 1  1154276
+1.832 UE: 1 Sending SR to PHY in slot FrameNum: 183 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.84054 1  0
+BufferSizeTrace 1.84054 1  0
+BufferSizeTrace 1.84054 1  0
+BufferSizeTrace 1.84054 1  1008104
+BufferSizeTrace 1.85054 1  21222
+BufferSizeTrace 1.85054 1  0
+BufferSizeTrace 1.85054 1  0
+BufferSizeTrace 1.85054 1  521130
+BufferSizeTrace 1.86054 1  43470
+BufferSizeTrace 1.86054 1  0
+BufferSizeTrace 1.86054 1  0
+BufferSizeTrace 1.86054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 1.87054 1  0
+BufferSizeTrace 1.87054 1  0
+BufferSizeTrace 1.87054 1  0
+BufferSizeTrace 1.87054 1  1154384
+1.872 UE: 1 Sending SR to PHY in slot FrameNum: 187 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.88054 1  0
+BufferSizeTrace 1.88054 1  0
+BufferSizeTrace 1.88054 1  0
+BufferSizeTrace 1.88054 1  1008215
+BufferSizeTrace 1.89054 1  21168
+BufferSizeTrace 1.89054 1  0
+BufferSizeTrace 1.89054 1  0
+BufferSizeTrace 1.89054 1  521240
+BufferSizeTrace 1.90054 1  43470
+BufferSizeTrace 1.90054 1  0
+BufferSizeTrace 1.90054 1  0
+BufferSizeTrace 1.90054 1  34266
+E2E latency: 0.0340093
+BufferSizeTrace 1.91054 1  0
+BufferSizeTrace 1.91054 1  0
+BufferSizeTrace 1.91054 1  0
+BufferSizeTrace 1.91054 1  1154384
+1.912 UE: 1 Sending SR to PHY in slot FrameNum: 191 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.92054 1  0
+BufferSizeTrace 1.92054 1  0
+BufferSizeTrace 1.92054 1  0
+BufferSizeTrace 1.92054 1  1008215
+BufferSizeTrace 1.93054 1  21168
+BufferSizeTrace 1.93054 1  0
+BufferSizeTrace 1.93054 1  0
+BufferSizeTrace 1.93054 1  521240
+BufferSizeTrace 1.94054 1  43470
+BufferSizeTrace 1.94054 1  0
+BufferSizeTrace 1.94054 1  0
+BufferSizeTrace 1.94054 1  34266
+E2E latency: 0.0340093
+BufferSizeTrace 1.95054 1  0
+BufferSizeTrace 1.95054 1  0
+BufferSizeTrace 1.95054 1  0
+BufferSizeTrace 1.95054 1  1154276
+1.952 UE: 1 Sending SR to PHY in slot FrameNum: 195 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 1.96054 1  0
+BufferSizeTrace 1.96054 1  0
+BufferSizeTrace 1.96054 1  0
+BufferSizeTrace 1.96054 1  1008104
+BufferSizeTrace 1.97054 1  21222
+BufferSizeTrace 1.97054 1  0
+BufferSizeTrace 1.97054 1  0
+BufferSizeTrace 1.97054 1  521130
+BufferSizeTrace 1.98054 1  43470
+BufferSizeTrace 1.98054 1  0
+BufferSizeTrace 1.98054 1  0
+BufferSizeTrace 1.98054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 1.99054 1  0
+BufferSizeTrace 1.99054 1  0
+BufferSizeTrace 1.99054 1  0
+BufferSizeTrace 1.99054 1  1154276
+1.992 UE: 1 Sending SR to PHY in slot FrameNum: 199 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.00054 1  0
+BufferSizeTrace 2.00054 1  0
+BufferSizeTrace 2.00054 1  0
+BufferSizeTrace 2.00054 1  1008104
+BufferSizeTrace 2.01054 1  21222
+BufferSizeTrace 2.01054 1  0
+BufferSizeTrace 2.01054 1  0
+BufferSizeTrace 2.01054 1  521130
+BufferSizeTrace 2.02054 1  43470
+BufferSizeTrace 2.02054 1  0
+BufferSizeTrace 2.02054 1  0
+BufferSizeTrace 2.02054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 2.03054 1  0
+BufferSizeTrace 2.03054 1  0
+BufferSizeTrace 2.03054 1  0
+BufferSizeTrace 2.03054 1  1154276
+2.032 UE: 1 Sending SR to PHY in slot FrameNum: 203 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.04054 1  0
+BufferSizeTrace 2.04054 1  0
+BufferSizeTrace 2.04054 1  0
+BufferSizeTrace 2.04054 1  1008104
+BufferSizeTrace 2.05054 1  21222
+BufferSizeTrace 2.05054 1  0
+BufferSizeTrace 2.05054 1  0
+BufferSizeTrace 2.05054 1  521130
+BufferSizeTrace 2.06054 1  43470
+BufferSizeTrace 2.06054 1  0
+BufferSizeTrace 2.06054 1  0
+BufferSizeTrace 2.06054 1  34155
+E2E latency: 0.0345093
+BufferSizeTrace 2.07054 1  0
+BufferSizeTrace 2.07054 1  0
+BufferSizeTrace 2.07054 1  0
+BufferSizeTrace 2.07054 1  1154276
+2.072 UE: 1 Sending SR to PHY in slot FrameNum: 207 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.08054 1  0
+BufferSizeTrace 2.08054 1  0
+BufferSizeTrace 2.08054 1  0
+BufferSizeTrace 2.08054 1  1008104
+BufferSizeTrace 2.09054 1  21222
+BufferSizeTrace 2.09054 1  0
+BufferSizeTrace 2.09054 1  0
+BufferSizeTrace 2.09054 1  521130
+BufferSizeTrace 2.10054 1  43470
+BufferSizeTrace 2.10054 1  0
+BufferSizeTrace 2.10054 1  0
+BufferSizeTrace 2.10054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 2.11054 1  0
+BufferSizeTrace 2.11054 1  0
+BufferSizeTrace 2.11054 1  0
+BufferSizeTrace 2.11054 1  1154384
+2.112 UE: 1 Sending SR to PHY in slot FrameNum: 211 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.12054 1  0
+BufferSizeTrace 2.12054 1  0
+BufferSizeTrace 2.12054 1  0
+BufferSizeTrace 2.12054 1  1008215
+BufferSizeTrace 2.13054 1  21168
+BufferSizeTrace 2.13054 1  0
+BufferSizeTrace 2.13054 1  0
+BufferSizeTrace 2.13054 1  521240
+BufferSizeTrace 2.14054 1  43470
+BufferSizeTrace 2.14054 1  0
+BufferSizeTrace 2.14054 1  0
+BufferSizeTrace 2.14054 1  34266
+E2E latency: 0.0340093
+BufferSizeTrace 2.15054 1  0
+BufferSizeTrace 2.15054 1  0
+BufferSizeTrace 2.15054 1  0
+BufferSizeTrace 2.15054 1  1155032
+2.152 UE: 1 Sending SR to PHY in slot FrameNum: 215 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.16054 1  0
+BufferSizeTrace 2.16054 1  0
+BufferSizeTrace 2.16054 1  0
+BufferSizeTrace 2.16054 1  1008880
+BufferSizeTrace 2.17054 1  21168
+BufferSizeTrace 2.17054 1  0
+BufferSizeTrace 2.17054 1  0
+BufferSizeTrace 2.17054 1  521905
+BufferSizeTrace 2.18054 1  43470
+BufferSizeTrace 2.18054 1  0
+BufferSizeTrace 2.18054 1  0
+BufferSizeTrace 2.18054 1  34931
+E2E latency: 0.0330098
+BufferSizeTrace 2.19054 1  0
+BufferSizeTrace 2.19054 1  0
+BufferSizeTrace 2.19054 1  0
+BufferSizeTrace 2.19054 1  1154276
+2.192 UE: 1 Sending SR to PHY in slot FrameNum: 219 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.20054 1  0
+BufferSizeTrace 2.20054 1  0
+BufferSizeTrace 2.20054 1  0
+BufferSizeTrace 2.20054 1  1008104
+BufferSizeTrace 2.21054 1  21222
+BufferSizeTrace 2.21054 1  0
+BufferSizeTrace 2.21054 1  0
+BufferSizeTrace 2.21054 1  521130
+BufferSizeTrace 2.22054 1  43470
+BufferSizeTrace 2.22054 1  0
+BufferSizeTrace 2.22054 1  0
+BufferSizeTrace 2.22054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 2.23054 1  0
+BufferSizeTrace 2.23054 1  0
+BufferSizeTrace 2.23054 1  0
+BufferSizeTrace 2.23054 1  1154276
+2.232 UE: 1 Sending SR to PHY in slot FrameNum: 223 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.24054 1  0
+BufferSizeTrace 2.24054 1  0
+BufferSizeTrace 2.24054 1  0
+BufferSizeTrace 2.24054 1  1008104
+BufferSizeTrace 2.25054 1  21222
+BufferSizeTrace 2.25054 1  0
+BufferSizeTrace 2.25054 1  0
+BufferSizeTrace 2.25054 1  521130
+BufferSizeTrace 2.26054 1  43470
+BufferSizeTrace 2.26054 1  0
+BufferSizeTrace 2.26054 1  0
+BufferSizeTrace 2.26054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 2.27054 1  0
+BufferSizeTrace 2.27054 1  0
+BufferSizeTrace 2.27054 1  0
+BufferSizeTrace 2.27054 1  1154276
+2.272 UE: 1 Sending SR to PHY in slot FrameNum: 227 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.28054 1  0
+BufferSizeTrace 2.28054 1  0
+BufferSizeTrace 2.28054 1  0
+BufferSizeTrace 2.28054 1  1008104
+BufferSizeTrace 2.29054 1  21222
+BufferSizeTrace 2.29054 1  0
+BufferSizeTrace 2.29054 1  0
+BufferSizeTrace 2.29054 1  521130
+BufferSizeTrace 2.30054 1  43470
+BufferSizeTrace 2.30054 1  0
+BufferSizeTrace 2.30054 1  0
+BufferSizeTrace 2.30054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 2.31054 1  0
+BufferSizeTrace 2.31054 1  0
+BufferSizeTrace 2.31054 1  0
+BufferSizeTrace 2.31054 1  1154276
+2.312 UE: 1 Sending SR to PHY in slot FrameNum: 231 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.32054 1  0
+BufferSizeTrace 2.32054 1  0
+BufferSizeTrace 2.32054 1  0
+BufferSizeTrace 2.32054 1  1008104
+BufferSizeTrace 2.33054 1  21222
+BufferSizeTrace 2.33054 1  0
+BufferSizeTrace 2.33054 1  0
+BufferSizeTrace 2.33054 1  521130
+BufferSizeTrace 2.34054 1  43470
+BufferSizeTrace 2.34054 1  0
+BufferSizeTrace 2.34054 1  0
+BufferSizeTrace 2.34054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 2.35054 1  0
+BufferSizeTrace 2.35054 1  0
+BufferSizeTrace 2.35054 1  0
+BufferSizeTrace 2.35054 1  1154276
+2.352 UE: 1 Sending SR to PHY in slot FrameNum: 235 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.36054 1  0
+BufferSizeTrace 2.36054 1  0
+BufferSizeTrace 2.36054 1  0
+BufferSizeTrace 2.36054 1  1008104
+BufferSizeTrace 2.37054 1  21222
+BufferSizeTrace 2.37054 1  0
+BufferSizeTrace 2.37054 1  0
+BufferSizeTrace 2.37054 1  521130
+BufferSizeTrace 2.38054 1  43470
+BufferSizeTrace 2.38054 1  0
+BufferSizeTrace 2.38054 1  0
+BufferSizeTrace 2.38054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 2.39054 1  0
+BufferSizeTrace 2.39054 1  0
+BufferSizeTrace 2.39054 1  0
+BufferSizeTrace 2.39054 1  1154276
+2.392 UE: 1 Sending SR to PHY in slot FrameNum: 239 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.40054 1  0
+BufferSizeTrace 2.40054 1  0
+BufferSizeTrace 2.40054 1  0
+BufferSizeTrace 2.40054 1  1008104
+BufferSizeTrace 2.41054 1  21222
+BufferSizeTrace 2.41054 1  0
+BufferSizeTrace 2.41054 1  0
+BufferSizeTrace 2.41054 1  521130
+BufferSizeTrace 2.42054 1  43470
+BufferSizeTrace 2.42054 1  0
+BufferSizeTrace 2.42054 1  0
+BufferSizeTrace 2.42054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 2.43054 1  0
+BufferSizeTrace 2.43054 1  0
+BufferSizeTrace 2.43054 1  0
+BufferSizeTrace 2.43054 1  1154276
+2.432 UE: 1 Sending SR to PHY in slot FrameNum: 243 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.44054 1  0
+BufferSizeTrace 2.44054 1  0
+BufferSizeTrace 2.44054 1  0
+BufferSizeTrace 2.44054 1  1008104
+BufferSizeTrace 2.45054 1  21222
+BufferSizeTrace 2.45054 1  0
+BufferSizeTrace 2.45054 1  0
+BufferSizeTrace 2.45054 1  521130
+BufferSizeTrace 2.46054 1  43470
+BufferSizeTrace 2.46054 1  0
+BufferSizeTrace 2.46054 1  0
+BufferSizeTrace 2.46054 1  34155
+E2E latency: 0.0345093
+BufferSizeTrace 2.47054 1  0
+BufferSizeTrace 2.47054 1  0
+BufferSizeTrace 2.47054 1  0
+BufferSizeTrace 2.47054 1  1154276
+2.472 UE: 1 Sending SR to PHY in slot FrameNum: 247 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.48054 1  0
+BufferSizeTrace 2.48054 1  0
+BufferSizeTrace 2.48054 1  0
+BufferSizeTrace 2.48054 1  1008104
+BufferSizeTrace 2.49054 1  21222
+BufferSizeTrace 2.49054 1  0
+BufferSizeTrace 2.49054 1  0
+BufferSizeTrace 2.49054 1  521130
+BufferSizeTrace 2.50054 1  43470
+BufferSizeTrace 2.50054 1  0
+BufferSizeTrace 2.50054 1  0
+BufferSizeTrace 2.50054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 2.51054 1  0
+BufferSizeTrace 2.51054 1  0
+BufferSizeTrace 2.51054 1  0
+BufferSizeTrace 2.51054 1  1154276
+2.512 UE: 1 Sending SR to PHY in slot FrameNum: 251 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.52054 1  0
+BufferSizeTrace 2.52054 1  0
+BufferSizeTrace 2.52054 1  0
+BufferSizeTrace 2.52054 1  1008104
+BufferSizeTrace 2.53054 1  21222
+BufferSizeTrace 2.53054 1  0
+BufferSizeTrace 2.53054 1  0
+BufferSizeTrace 2.53054 1  521130
+BufferSizeTrace 2.54054 1  43470
+BufferSizeTrace 2.54054 1  0
+BufferSizeTrace 2.54054 1  0
+BufferSizeTrace 2.54054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 2.55054 1  0
+BufferSizeTrace 2.55054 1  0
+BufferSizeTrace 2.55054 1  0
+BufferSizeTrace 2.55054 1  1154276
+2.552 UE: 1 Sending SR to PHY in slot FrameNum: 255 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.56054 1  0
+BufferSizeTrace 2.56054 1  0
+BufferSizeTrace 2.56054 1  0
+BufferSizeTrace 2.56054 1  1008104
+BufferSizeTrace 2.57054 1  21222
+BufferSizeTrace 2.57054 1  0
+BufferSizeTrace 2.57054 1  0
+BufferSizeTrace 2.57054 1  521130
+BufferSizeTrace 2.58054 1  43470
+BufferSizeTrace 2.58054 1  0
+BufferSizeTrace 2.58054 1  0
+BufferSizeTrace 2.58054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 2.59054 1  0
+BufferSizeTrace 2.59054 1  0
+BufferSizeTrace 2.59054 1  0
+BufferSizeTrace 2.59054 1  1155356
+2.592 UE: 1 Sending SR to PHY in slot FrameNum: 259 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.60054 1  0
+BufferSizeTrace 2.60054 1  0
+BufferSizeTrace 2.60054 1  0
+BufferSizeTrace 2.60054 1  1009211
+BufferSizeTrace 2.61054 1  21168
+BufferSizeTrace 2.61054 1  0
+BufferSizeTrace 2.61054 1  0
+BufferSizeTrace 2.61054 1  522237
+BufferSizeTrace 2.62054 1  43416
+BufferSizeTrace 2.62054 1  0
+BufferSizeTrace 2.62054 1  0
+BufferSizeTrace 2.62054 1  35262
+E2E latency: 0.0330103
+BufferSizeTrace 2.63054 1  0
+BufferSizeTrace 2.63054 1  0
+BufferSizeTrace 2.63054 1  0
+BufferSizeTrace 2.63054 1  1154276
+2.632 UE: 1 Sending SR to PHY in slot FrameNum: 263 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.64054 1  0
+BufferSizeTrace 2.64054 1  0
+BufferSizeTrace 2.64054 1  0
+BufferSizeTrace 2.64054 1  1008104
+BufferSizeTrace 2.65054 1  21222
+BufferSizeTrace 2.65054 1  0
+BufferSizeTrace 2.65054 1  0
+BufferSizeTrace 2.65054 1  521130
+BufferSizeTrace 2.66054 1  43470
+BufferSizeTrace 2.66054 1  0
+BufferSizeTrace 2.66054 1  0
+BufferSizeTrace 2.66054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 2.67054 1  0
+BufferSizeTrace 2.67054 1  0
+BufferSizeTrace 2.67054 1  0
+BufferSizeTrace 2.67054 1  1154330
+2.672 UE: 1 Sending SR to PHY in slot FrameNum: 267 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.68054 1  0
+BufferSizeTrace 2.68054 1  0
+BufferSizeTrace 2.68054 1  0
+BufferSizeTrace 2.68054 1  1008160
+BufferSizeTrace 2.69054 1  21168
+BufferSizeTrace 2.69054 1  0
+BufferSizeTrace 2.69054 1  0
+BufferSizeTrace 2.69054 1  521185
+BufferSizeTrace 2.70054 1  43470
+BufferSizeTrace 2.70054 1  0
+BufferSizeTrace 2.70054 1  0
+BufferSizeTrace 2.70054 1  34210
+E2E latency: 0.0340093
+BufferSizeTrace 2.71054 1  0
+BufferSizeTrace 2.71054 1  0
+BufferSizeTrace 2.71054 1  0
+BufferSizeTrace 2.71054 1  1154276
+2.712 UE: 1 Sending SR to PHY in slot FrameNum: 271 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.72054 1  0
+BufferSizeTrace 2.72054 1  0
+BufferSizeTrace 2.72054 1  0
+BufferSizeTrace 2.72054 1  1008104
+BufferSizeTrace 2.73054 1  21222
+BufferSizeTrace 2.73054 1  0
+BufferSizeTrace 2.73054 1  0
+BufferSizeTrace 2.73054 1  521130
+BufferSizeTrace 2.74054 1  43470
+BufferSizeTrace 2.74054 1  0
+BufferSizeTrace 2.74054 1  0
+BufferSizeTrace 2.74054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 2.75054 1  0
+BufferSizeTrace 2.75054 1  0
+BufferSizeTrace 2.75054 1  0
+BufferSizeTrace 2.75054 1  1154276
+2.752 UE: 1 Sending SR to PHY in slot FrameNum: 275 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.76054 1  0
+BufferSizeTrace 2.76054 1  0
+BufferSizeTrace 2.76054 1  0
+BufferSizeTrace 2.76054 1  1008104
+BufferSizeTrace 2.77054 1  21222
+BufferSizeTrace 2.77054 1  0
+BufferSizeTrace 2.77054 1  0
+BufferSizeTrace 2.77054 1  521130
+BufferSizeTrace 2.78054 1  43470
+BufferSizeTrace 2.78054 1  0
+BufferSizeTrace 2.78054 1  0
+BufferSizeTrace 2.78054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 2.79054 1  0
+BufferSizeTrace 2.79054 1  0
+BufferSizeTrace 2.79054 1  0
+BufferSizeTrace 2.79054 1  1154276
+2.792 UE: 1 Sending SR to PHY in slot FrameNum: 279 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.80054 1  0
+BufferSizeTrace 2.80054 1  0
+BufferSizeTrace 2.80054 1  0
+BufferSizeTrace 2.80054 1  1008104
+BufferSizeTrace 2.81054 1  21222
+BufferSizeTrace 2.81054 1  0
+BufferSizeTrace 2.81054 1  0
+BufferSizeTrace 2.81054 1  521130
+BufferSizeTrace 2.82054 1  43470
+BufferSizeTrace 2.82054 1  0
+BufferSizeTrace 2.82054 1  0
+BufferSizeTrace 2.82054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 2.83054 1  0
+BufferSizeTrace 2.83054 1  0
+BufferSizeTrace 2.83054 1  0
+BufferSizeTrace 2.83054 1  1154384
+2.832 UE: 1 Sending SR to PHY in slot FrameNum: 283 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.84054 1  0
+BufferSizeTrace 2.84054 1  0
+BufferSizeTrace 2.84054 1  0
+BufferSizeTrace 2.84054 1  1008215
+BufferSizeTrace 2.85054 1  21168
+BufferSizeTrace 2.85054 1  0
+BufferSizeTrace 2.85054 1  0
+BufferSizeTrace 2.85054 1  521240
+BufferSizeTrace 2.86054 1  43470
+BufferSizeTrace 2.86054 1  0
+BufferSizeTrace 2.86054 1  0
+BufferSizeTrace 2.86054 1  34266
+E2E latency: 0.0340093
+BufferSizeTrace 2.87054 1  0
+BufferSizeTrace 2.87054 1  0
+BufferSizeTrace 2.87054 1  0
+BufferSizeTrace 2.87054 1  1154276
+2.872 UE: 1 Sending SR to PHY in slot FrameNum: 287 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.88054 1  0
+BufferSizeTrace 2.88054 1  0
+BufferSizeTrace 2.88054 1  0
+BufferSizeTrace 2.88054 1  1008104
+BufferSizeTrace 2.89054 1  21222
+BufferSizeTrace 2.89054 1  0
+BufferSizeTrace 2.89054 1  0
+BufferSizeTrace 2.89054 1  521130
+BufferSizeTrace 2.90054 1  43470
+BufferSizeTrace 2.90054 1  0
+BufferSizeTrace 2.90054 1  0
+BufferSizeTrace 2.90054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 2.91054 1  0
+BufferSizeTrace 2.91054 1  0
+BufferSizeTrace 2.91054 1  0
+BufferSizeTrace 2.91054 1  1154276
+2.912 UE: 1 Sending SR to PHY in slot FrameNum: 291 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.92054 1  0
+BufferSizeTrace 2.92054 1  0
+BufferSizeTrace 2.92054 1  0
+BufferSizeTrace 2.92054 1  1008104
+BufferSizeTrace 2.93054 1  21222
+BufferSizeTrace 2.93054 1  0
+BufferSizeTrace 2.93054 1  0
+BufferSizeTrace 2.93054 1  521130
+BufferSizeTrace 2.94054 1  43470
+BufferSizeTrace 2.94054 1  0
+BufferSizeTrace 2.94054 1  0
+BufferSizeTrace 2.94054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 2.95054 1  0
+BufferSizeTrace 2.95054 1  0
+BufferSizeTrace 2.95054 1  0
+BufferSizeTrace 2.95054 1  1154708
+2.952 UE: 1 Sending SR to PHY in slot FrameNum: 295 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 2.96054 1  0
+BufferSizeTrace 2.96054 1  0
+BufferSizeTrace 2.96054 1  0
+BufferSizeTrace 2.96054 1  1008547
+BufferSizeTrace 2.97054 1  21168
+BufferSizeTrace 2.97054 1  0
+BufferSizeTrace 2.97054 1  0
+BufferSizeTrace 2.97054 1  521573
+BufferSizeTrace 2.98054 1  43470
+BufferSizeTrace 2.98054 1  0
+BufferSizeTrace 2.98054 1  0
+BufferSizeTrace 2.98054 1  34598
+E2E latency: 0.0335093
+BufferSizeTrace 2.99054 1  114845
+BufferSizeTrace 2.99054 1  0
+BufferSizeTrace 2.99054 1  0
+BufferSizeTrace 2.99054 1  810
+2.992 UE: 1 Sending SR to PHY in slot FrameNum: 299 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 3.00054 1  196876
+BufferSizeTrace 3.00054 1  0
+BufferSizeTrace 3.00054 1  0
+BufferSizeTrace 3.00054 1  54
+3.002 UE: 1 Sending SR to PHY in slot FrameNum: 300 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 3.01054 1  0
+BufferSizeTrace 3.01054 1  0
+BufferSizeTrace 3.01054 1  0
+BufferSizeTrace 3.01054 1  1545
+BufferSizeTrace 3.02054 1  0
+BufferSizeTrace 3.02054 1  0
+BufferSizeTrace 3.02054 1  0
+BufferSizeTrace 3.02054 1  1081711
+BufferSizeTrace 3.03054 1  21114
+BufferSizeTrace 3.03054 1  0
+BufferSizeTrace 3.03054 1  0
+BufferSizeTrace 3.03054 1  594737
+BufferSizeTrace 3.04054 1  27579
+BufferSizeTrace 3.04054 1  0
+BufferSizeTrace 3.04054 1  0
+BufferSizeTrace 3.04054 1  132111
+E2E latency: 0.0305098
+BufferSizeTrace 3.05054 1  0
+BufferSizeTrace 3.05054 1  0
+BufferSizeTrace 3.05054 1  0
+BufferSizeTrace 3.05054 1  1154276
+3.052 UE: 1 Sending SR to PHY in slot FrameNum: 305 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 3.06054 1  3294
+BufferSizeTrace 3.06054 1  0
+BufferSizeTrace 3.06054 1  0
+BufferSizeTrace 3.06054 1  983756
+BufferSizeTrace 3.07054 1  25596
+BufferSizeTrace 3.07054 1  0
+BufferSizeTrace 3.07054 1  0
+BufferSizeTrace 3.07054 1  496781
+BufferSizeTrace 3.08054 1  32061
+BufferSizeTrace 3.08054 1  0
+BufferSizeTrace 3.08054 1  0
+BufferSizeTrace 3.08054 1  34155
+E2E latency: 0.0340093
+BufferSizeTrace 3.09054 1  0
+BufferSizeTrace 3.09054 1  0
+BufferSizeTrace 3.09054 1  0
+BufferSizeTrace 3.09054 1  1154276
+3.092 UE: 1 Sending SR to PHY in slot FrameNum: 309 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 3.10054 1  3294
+BufferSizeTrace 3.10054 1  0
+BufferSizeTrace 3.10054 1  0
+BufferSizeTrace 3.10054 1  983756
+BufferSizeTrace 3.11054 1  25596
+BufferSizeTrace 3.11054 1  0
+BufferSizeTrace 3.11054 1  0
+BufferSizeTrace 3.11054 1  496781
+BufferSizeTrace 3.12054 1  32061
+BufferSizeTrace 3.12054 1  0
+BufferSizeTrace 3.12054 1  0
+BufferSizeTrace 3.12054 1  34155
+E2E latency: 0.0360093
+BufferSizeTrace 3.13054 1  0
+BufferSizeTrace 3.13054 1  0
+BufferSizeTrace 3.13054 1  0
+BufferSizeTrace 3.13054 1  1154276
+3.132 UE: 1 Sending SR to PHY in slot FrameNum: 313 SubFrameNum: 2 SlotNum: 0
+BufferSizeTrace 3.14054 1  3294
+BufferSizeTrace 3.14054 1  0
+BufferSizeTrace 3.14054 1  0
+BufferSizeTrace 3.14054 1  983756
+BufferSizeTrace 3.15054 1  25596
+BufferSizeTrace 3.15054 1  0
+BufferSizeTrace 3.15054 1  0
+BufferSizeTrace 3.15054 1  496781
+Interrupted 

@@ -94,6 +94,8 @@ private:
   /// Report buffer status
   void DoReportBufferStatus ();
 
+  void BufferSizeTrace();
+
 private:
   uint32_t m_maxTxBufferSize; ///< maximum transmit buffer status
   uint32_t m_txBufferSize; ///< transmit buffer size
@@ -158,7 +160,7 @@ private:
    * Expected Sequence Number
    */
   SequenceNumber10 m_expectedSeqNumber;
-
+  EventId m_traceBufferSizeEvent;
 };
 
 
