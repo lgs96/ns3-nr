@@ -378,6 +378,10 @@ LteUePowerControl::CalculatePuschTxPower ()
                       << " Alpha: " << m_alpha[j] << " PathLoss: " << m_pathLoss
                       << " deltaTF: " << m_deltaTF << " fc: " << m_fc);
 
+  std::cout<<"RB: " << m_M_Pusch << " m_PoPusch: " << PoPusch
+                      << " Alpha: " << m_alpha[j] << " PathLoss: " << m_pathLoss
+                      << " deltaTF: " << m_deltaTF << " fc: " << m_fc<<std::endl;
+
   if ( m_M_Pusch > 0 )
     {
       m_curPuschTxPower = 10 * log10 (1.0 * m_M_Pusch) + PoPusch + m_alpha[j] * m_pathLoss + m_deltaTF + m_fc;

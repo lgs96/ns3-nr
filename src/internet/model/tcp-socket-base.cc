@@ -4359,6 +4359,7 @@ TcpSocketBase::UpdatePacingRateTrace (DataRate oldValue, DataRate newValue)
 void
 TcpSocketBase::UpdateCwnd (uint32_t oldValue, uint32_t newValue)
 {
+  NS_LOG_UNCOND (Simulator::Now ().GetSeconds () << "\t" << newValue);
   m_cWndTrace (oldValue, newValue);
 }
 
